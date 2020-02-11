@@ -1,0 +1,177 @@
+Last login: Tue Feb 11 14:13:13 on ttys000
+maclab-109:~ benko005$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+maclab-109:~ benko005$ ls /usr
+bin		libexec		sbin		standalone
+lib		local		share
+maclab-109:~ benko005$ ls ~ /usr
+/Users/benko005:
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+
+/usr:
+bin		libexec		sbin		standalone
+lib		local		share
+maclab-109:~ benko005$ /usr:
+-bash: /usr:: No such file or directory
+maclab-109:~ benko005$ ls -l
+total 0
+drwx------@  3 benko005  UWP\Domain Users    96 Feb  6 13:58 Applications
+drwx------+  4 benko005  UWP\Domain Users   128 Feb  6 14:00 Desktop
+drwx------+  6 benko005  UWP\Domain Users   192 Feb 11 15:11 Documents
+drwx------+  6 benko005  UWP\Domain Users   192 Feb 11 15:12 Downloads
+drwx------@ 60 benko005  UWP\Domain Users  1920 Feb 11 14:53 Library
+drwx------+  3 benko005  UWP\Domain Users    96 Feb  6 13:54 Movies
+drwx------+  3 benko005  UWP\Domain Users    96 Feb  6 13:54 Music
+drwx------+  3 benko005  UWP\Domain Users    96 Feb  6 13:54 Pictures
+drwxr-xr-x+  4 benko005  UWP\Domain Users   128 Feb  6 13:54 Public
+drwxr-xr-x   4 benko005  UWP\Domain Users   128 Feb  6 14:26 PycharmProjects
+maclab-109:~ benko005$ ls -lt
+total 0
+drwx------+  6 benko005  UWP\Domain Users   192 Feb 11 15:12 Downloads
+drwx------+  6 benko005  UWP\Domain Users   192 Feb 11 15:11 Documents
+drwx------@ 60 benko005  UWP\Domain Users  1920 Feb 11 14:53 Library
+drwxr-xr-x   4 benko005  UWP\Domain Users   128 Feb  6 14:26 PycharmProjects
+drwx------+  4 benko005  UWP\Domain Users   128 Feb  6 14:00 Desktop
+drwx------@  3 benko005  UWP\Domain Users    96 Feb  6 13:58 Applications
+drwx------+  3 benko005  UWP\Domain Users    96 Feb  6 13:54 Movies
+drwx------+  3 benko005  UWP\Domain Users    96 Feb  6 13:54 Music
+drwx------+  3 benko005  UWP\Domain Users    96 Feb  6 13:54 Pictures
+drwxr-xr-x+  4 benko005  UWP\Domain Users   128 Feb  6 13:54 Public
+maclab-109:~ benko005$ ls -lt --reverse
+ls: illegal option -- -
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]
+maclab-109:~ benko005$ -l
+-bash: -l: command not found
+maclab-109:~ benko005$ file WhatIsTheShell_gamma
+WhatIsTheShell_gamma: cannot open `WhatIsTheShell_gamma' (No such file or directory)
+maclab-109:~ benko005$ file WhatIsTheShell_gamma.txt
+WhatIsTheShell_gamma.txt: cannot open `WhatIsTheShell_gamma.txt' (No such file or directory)
+maclab-109:~ benko005$ /bin
+-bash: /bin: is a directory
+maclab-109:~ benko005$ 
+Display all 1389 possibilities? (y or n)
+!                              exit                           memory_pressure                security
+./                             expand                         mesg                           securityd
+2to3                           expect                         mib2c                          sed
+2to3-                          export                         mib2c-update                   seeksize.d
+2to3-2.7                       expr                           mig                            segedit
+2to3-3.6                       extcheck                       mkbom                          select
+2to3-3.8                       eyapp                          mkdep                          sendmail
+:                              eyapp5.18                      mkdir                          seq
+AppleFileServer                false                          mkextunpack                    serialver
+AssetCacheLocatorUtil          fc                             mkfifo                         serverinfo
+AssetCacheManagerUtil          fcgistarter                    mkfile                         servertool
+AssetCacheTetheratorUtil       fddist                         mklocale                       set
+BootCacheControl               fdesetup                       mknod                          setkey
+BuildStrings                   fdisk                          mkpassdb                       setquota
+CpMac                          fg                             mktemp                         setregion
+DeRez                          fgrep                          mmroff                         setuids.d
+DevToolsSecurity               fi                             mnthome                        sfltool
+DirectoryService               fibreconfig                    moo-outdated                   sftp
+GetFileInfo                    file                           moo-outdated5.18               sh
+IOAccelMemory                  filebyproc.d                   moose-outdated                 shar
+KernelEventAgent               filecoordinationd              moose-outdated5.18             sharing
+MergePef                       filtercalltree                 more                           shasum
+MvMac                          find                           mount                          shasum5.18
+NetBootClientStatus            find2perl                      mount_9p                       shell_session_delete_expired
+PasswordService                find2perl5.18                  mount_acfs                     shell_session_history_allowed
+ResMerger                      findrule                       mount_afp                      shell_session_history_check
+Rez                            findrule5.18                   mount_apfs                     shell_session_history_enable
+RezDet                         finger                         mount_cd9660                   shell_session_save
+RezWack                        firmwarepasswd                 mount_cddafs                   shell_session_save_history
+SafeEjectGPU                   fixproc                        mount_devfs                    shell_session_update
+SetFile                        flex                           mount_exfat                    shift
+SplitForks                     flex++                         mount_fdesc                    shlock
+UnRezWack                      fmt                            mount_ftp                      shopt
+WirelessRadioManagerd          fold                           mount_hfs                      showmount
+[                              fontrestore                    mount_msdos                    shutdown
+[[                             footprint                      mount_nfs                      sigdist.d
+]]                             for                            mount_ntfs                     sips
+a2p                            format-sql                     mount_smbfs                    size
+a2p5.18                        format-sql5.18                 mount_udf                      skywalkctl
+ab                             from                           mount_webdav                   slapacl
+ac                             fs_usage                       mp2bug                         slapadd
+accept                         fsck                           mpioutil                       slapauth
+accton                         fsck_apfs                      msgs                           slapcat
+actool                         fsck_cs                        mtree                          slapconfig
+addftinfo                      fsck_exfat                     mv                             slapdn
+afclip                         fsck_hfs                       nano                           slapindex
+afconvert                      fsck_msdos                     nasm                           slappasswd
+afhash                         fsck_udf                       native2ascii                   slapschema
+afida                          fstyp                          nbdst                          slaptest
+afinfo                         fstyp_hfs                      nc                             sleep
+afmtodit                       fstyp_msdos                    ncal                           slogin
+afplay                         fstyp_ntfs                     ncctl                          smbd
+afscexpand                     fstyp_udf                      ncdestroy                      smbdiagnose
+agentxtrap                     function                       ncinit                         smbutil
+agvtool                        funzip                         nclist                         smtpd.py
+alias                          fuser                          ncurses5.4-config              smtpd2.7.py
+amt                            fwkdp                          ndisasm                        sncfginstall
+apachectl                      fwkpfv                         ndp                            sncfgquery
+apfs_hfs_convert               g++                            neqn                           sncfgremove
+applesingle                    gatherheaderdoc                net-server                     sncfgtemplate
+maclab-109:~ benko005$ file WhatIsTheShell_gamma.txt
+WhatIsTheShell_gamma.txt: cannot open `WhatIsTheShell_gamma.txt' (No such file or directory)
+maclab-109:~ benko005$ file WhatIsTheShell_Gamma.txt
+WhatIsTheShell_Gamma.txt: cannot open `WhatIsTheShell_Gamma.txt' (No such file or directory)
+maclab-109:~ benko005$ file WhatIsTheShell_Gamma.txt
+WhatIsTheShell_Gamma.txt: cannot open `WhatIsTheShell_Gamma.txt' (No such file or directory)
+maclab-109:~ benko005$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+maclab-109:~ benko005$ ls benko005
+ls: benko005: No such file or directory
+maclab-109:~ benko005$ ls /benko005
+ls: /benko005: No such file or directory
+maclab-109:~ benko005$ ls /us
+ls: /us: No such file or directory
+maclab-109:~ benko005$ ls /usr
+bin		lib		libexec		local		sbin		share		standalone
+maclab-109:~ benko005$ ls ~ /usr
+/Users/benko005:
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+
+/usr:
+bin		lib		libexec		local		sbin		share		standalone
+maclab-109:~ benko005$ ls ~ /usr/Documents
+ls: /usr/Documents: No such file or directory
+/Users/benko005:
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+maclab-109:~ benko005$ ls ~ /usr/Documents
+ls: /usr/Documents: No such file or directory
+/Users/benko005:
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+maclab-109:~ benko005$ ls ~ /usr ~ /Documents
+ls: /Documents: No such file or directory
+/Users/benko005:
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+
+/Users/benko005:
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+
+/usr:
+bin		lib		libexec		local		sbin		share		standalone
+maclab-109:~ benko005$ file Documents
+Documents: directory
+maclab-109:~ benko005$ less Terminal_Saved_Output.xt
+Terminal_Saved_Output.xt: No such file or directory
+maclab-109:~ benko005$ less Terminal_Saved_Output.txt
+Terminal_Saved_Output.txt: No such file or directory
+maclab-109:~ benko005$ pwd
+/Users/benko005
+maclab-109:~ benko005$ cd Documents
+maclab-109:Documents benko005$ less Terminal_Saved_Output.txt
+Terminal_Saved_Output.txt: No such file or directory
+maclab-109:Documents benko005$ ls
+Navigation.txt			Terminal Saved Output.txt
+maclab-109:Documents benko005$ less Navigationxt
+Navigationxt: No such file or directory
+maclab-109:Documents benko005$ less Navigation.txt
+maclab-109:Documents benko005$ 
