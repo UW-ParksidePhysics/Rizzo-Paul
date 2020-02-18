@@ -1,0 +1,363 @@
+Last login: Tue Feb 18 14:27:03 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+maclab-109:~ benko005$ type type
+type is a shell builtin
+maclab-109:~ benko005$ tupe ls
+-bash: tupe: command not found
+maclab-109:~ benko005$ type ls
+ls is /bin/ls
+maclab-109:~ benko005$ type cd
+cd is a shell builtin
+maclab-109:~ benko005$ type cp
+cp is /bin/cp
+maclab-109:~ benko005$ which ls
+/bin/ls
+maclab-109:~ benko005$ which cd
+/usr/bin/cd
+maclab-109:~ benko005$ help cd
+cd: cd [-L|-P] [dir]
+    Change the current directory to DIR.  The variable $HOME is the
+    default DIR.  The variable CDPATH defines the search path for
+    the directory containing DIR.  Alternative directory names in CDPATH
+    are separated by a colon (:).  A null directory name is the same as
+    the current directory, i.e. `.'.  If DIR begins with a slash (/),
+    then CDPATH is not used.  If the directory is not found, and the
+    shell option `cdable_vars' is set, then try the word as a variable
+    name.  If that variable has a value, then cd to the value of that
+    variable.  The -P option says to use the physical directory structure
+    instead of following symbolic links; the -L option forces symbolic links
+    to be followed.
+maclab-109:~ benko005$ mkdir --help
+mkdir: illegal option -- -
+usage: mkdir [-pv] [-m mode] directory ...
+maclab-109:~ benko005$ man ls
+maclab-109:~ benko005$ man 5 passwd
+maclab-109:~ benko005$ whatis ls
+builtin(1), !(1), %(1), .(1), :(1), @(1), {(1), }(1), alias(1), alloc(1), bg(1), bind(1), bindkey(1), break(1), breaksw(1), builtins(1), case(1), cd(1), chdir(1), command(1), complete(1), continue(1), default(1), dirs(1), do(1), done(1), echo(1), echotc(1), elif(1), else(1), end(1), endif(1), endsw(1), esac(1), eval(1), exec(1), exit(1), export(1), false(1), fc(1), fg(1), filetest(1), fi(1), for(1), foreach(1), getopts(1), glob(1), goto(1), hash(1), hashstat(1), history(1), hup(1), if(1), jobid(1), jobs(1), kill(1), limit(1), local(1), log(1), login(1), logout(1), ls-F(1), nice(1), nohup(1), notify(1), onintr(1), popd(1), printenv(1), pushd(1), pwd(1), read(1), readonly(1), rehash(1), repeat(1), return(1), sched(1), set(1), setenv(1), settc(1), setty(1), setvar(1), shift(1), source(1), stop(1), suspend(1), switch(1), telltc(1), test(1), then(1), time(1), times(1), trap(1), true(1), type(1), ulimit(1), umask(1), unalias(1), uncomplete(1), unhash(1), unlimit(1), unset(1), unsetenv(1), until(1), wait(1), where(1), which(1), while(1) - shell built-in commands
+ls(1)                    - list directory contents
+makewhatis: /usr/lib/./libgutenprint.2.dylib: No such file or directory
+makewhatis: /usr/lib/libsasl2.2.0.1.dylib: Not a directory
+makewhatis: /usr/lib/libldap.dylib: Not a directory
+makewhatis: /usr/lib/libsqlite3.0.dylib: Not a directory
+makewhatis: /usr/lib/libcom_err.dylib: Not a directory
+makewhatis: /usr/lib/libresolv.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmpagent.dylib: Not a directory
+makewhatis: /usr/lib/libMatch.1.dylib: Not a directory
+makewhatis: /usr/lib/libpam.dylib: Not a directory
+makewhatis: /usr/lib/charset.alias: Not a directory
+makewhatis: /usr/lib/libipsec.dylib: Not a directory
+makewhatis: /usr/lib/libsysdiagnose.dylib: Not a directory
+makewhatis: /usr/lib/libxml2.2.dylib: Not a directory
+makewhatis: /usr/lib/libgermantok.dylib: Not a directory
+makewhatis: /usr/lib/libz.dylib: Not a directory
+makewhatis: /usr/lib/libBSDPClient.A.dylib: Not a directory
+makewhatis: /usr/lib/libc.dylib: Not a directory
+makewhatis: /usr/lib/libobjc-trampolines.dylib: Not a directory
+makewhatis: /usr/lib/libgutenprint.2.dylib: No such file or directory
+makewhatis: /usr/lib/libMatch.dylib: Not a directory
+makewhatis: /usr/lib/libcrypto.44.dylib: Not a directory
+makewhatis: /usr/lib/libauto.dylib: Not a directory
+makewhatis: /usr/lib/libcoreroutine.dylib: Not a directory
+makewhatis: /usr/lib/libpcap.dylib: Not a directory
+makewhatis: /usr/lib/libquit.dylib: Not a directory
+makewhatis: /usr/lib/libpmsample.dylib: Not a directory
+makewhatis: /usr/lib/libcupsimage.2.dylib: Not a directory
+makewhatis: /usr/lib/libipsec.A.dylib: Not a directory
+makewhatis: /usr/lib/libextension.dylib: Not a directory
+makewhatis: /usr/lib/libpoll.dylib: Not a directory
+makewhatis: /usr/lib/libxar.dylib: Not a directory
+makewhatis: /usr/lib/liblapack.dylib: Not a directory
+makewhatis: /usr/lib/libnetwork.dylib: Not a directory
+makewhatis: /usr/lib/libsasl2.2.dylib: Not a directory
+makewhatis: /usr/lib/libIASUnifiedProgress.dylib: Not a directory
+makewhatis: /usr/lib/libresolv.9.dylib: Not a directory
+makewhatis: /usr/lib/libcoretls.dylib: Not a directory
+makewhatis: /usr/lib/libdz.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmptrapd.25.dylib: Not a directory
+makewhatis: /usr/lib/libobjc.dylib: Not a directory
+makewhatis: /usr/lib/libarchive.2.dylib: Not a directory
+makewhatis: /usr/lib/libclapack.dylib: Not a directory
+makewhatis: /usr/lib/ACIPCBTLib.dylib: Not a directory
+makewhatis: /usr/lib/libBSDPClient.dylib: Not a directory
+makewhatis: /usr/lib/libtls.6.dylib: Not a directory
+makewhatis: /usr/lib/libtls.16.dylib: Not a directory
+makewhatis: /usr/lib/libperfcheck.dylib: Not a directory
+makewhatis: /usr/lib/libstdc++.6.dylib: Not a directory
+makewhatis: /usr/lib/libf77lapack.dylib: Not a directory
+makewhatis: /usr/lib/libXplugin.1.dylib: Not a directory
+makewhatis: /usr/lib/libmx.A.dylib: Not a directory
+makewhatis: /usr/lib/libxslt.1.dylib: Not a directory
+makewhatis: /usr/lib/libpcreposix.0.dylib: Not a directory
+makewhatis: /usr/lib/libz.1.2.11.dylib: Not a directory
+makewhatis: /usr/lib/libz.1.2.8.dylib: Not a directory
+makewhatis: /usr/lib/libFosl_dynamic.dylib: Not a directory
+makewhatis: /usr/lib/libproc.dylib: Not a directory
+makewhatis: /usr/lib/libbz2.1.0.5.dylib: Not a directory
+makewhatis: /usr/lib/libcompression.dylib: Not a directory
+makewhatis: /usr/lib/libAudioStatistics.dylib: Not a directory
+makewhatis: /usr/lib/libexslt.0.dylib: Not a directory
+makewhatis: /usr/lib/libpanel.dylib: Not a directory
+makewhatis: /usr/lib/libexpat.dylib: Not a directory
+makewhatis: /usr/lib/libcurses.dylib: Not a directory
+makewhatis: /usr/lib/libcharset.1.dylib: Not a directory
+makewhatis: /usr/lib/libtailspin.dylib: Not a directory
+makewhatis: /usr/lib/libssl.0.9.8.dylib: Not a directory
+makewhatis: /usr/lib/libcrypto.42.dylib: Not a directory
+makewhatis: /usr/lib/libiconv.2.4.0.dylib: Not a directory
+makewhatis: /usr/lib/libMemoryResourceException.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmp.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmptrapd.dylib: Not a directory
+makewhatis: /usr/lib/libspindump.dylib: Not a directory
+makewhatis: /usr/lib/libecpg.dylib: Not a directory
+makewhatis: /usr/lib/libdes425.dylib: Not a directory
+makewhatis: /usr/lib/libbz2.dylib: Not a directory
+makewhatis: /usr/lib/libimg4_development.dylib: Not a directory
+makewhatis: /usr/lib/libpcre.dylib: Not a directory
+makewhatis: /usr/lib/librpcsvc.dylib: Not a directory
+makewhatis: /usr/lib/libktrace.dylib: Not a directory
+makewhatis: /usr/lib/libAppleSSEExt.dylib: Not a directory
+makewhatis: /usr/lib/libpq.5.dylib: Not a directory
+makewhatis: /usr/lib/libxar.1.dylib: Not a directory
+makewhatis: /usr/lib/dsc_extractor.bundle: Not a directory
+makewhatis: /usr/lib/libCRFSuite.dylib: Not a directory
+makewhatis: /usr/lib/libxpc_datastores.dylib: Not a directory
+makewhatis: /usr/lib/libpcre.0.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmpagent.25.dylib: Not a directory
+makewhatis: /usr/lib/libutil1.0.dylib: Not a directory
+makewhatis: /usr/lib/libmecab.dylib: Not a directory
+makewhatis: /usr/lib/libiodbcinst.dylib: Not a directory
+makewhatis: /usr/lib/libapr-1.dylib: Not a directory
+makewhatis: /usr/lib/libATCommandStudioDynamic.dylib: Not a directory
+makewhatis: /usr/lib/libarchive.dylib: Not a directory
+makewhatis: /usr/lib/libsystemstats.dylib: Not a directory
+makewhatis: /usr/lib/libtcl8.5.dylib: Not a directory
+makewhatis: /usr/lib/libssl.dylib: Not a directory
+makewhatis: /usr/lib/libecpg.6.5.dylib: Not a directory
+makewhatis: /usr/lib/libauditd.dylib: Not a directory
+makewhatis: /usr/lib/dyld: Not a directory
+makewhatis: /usr/lib/PN548.dylib: Not a directory
+makewhatis: /usr/lib/libncurses.5.dylib: Not a directory
+makewhatis: /usr/lib/libiconv.2.dylib: Not a directory
+makewhatis: /usr/lib/libcrypto.0.9.7.dylib: Not a directory
+makewhatis: /usr/lib/libsandbox.1.dylib: Not a directory
+makewhatis: /usr/lib/libncurses.5.4.dylib: Not a directory
+makewhatis: /usr/lib/libiodbc.2.1.18.dylib: Not a directory
+makewhatis: /usr/lib/libiodbcinst.2.1.18.dylib: Not a directory
+makewhatis: /usr/lib/libdtrace.dylib: Not a directory
+makewhatis: /usr/lib/libChineseTokenizer.dylib: Not a directory
+makewhatis: /usr/lib/libSystem.dylib: Not a directory
+makewhatis: /usr/lib/liblangid.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmp.25.dylib: Not a directory
+makewhatis: /usr/lib/libcmph.dylib: Not a directory
+makewhatis: /usr/lib/libcups.2.dylib: Not a directory
+makewhatis: /usr/lib/libssl.35.dylib: Not a directory
+makewhatis: /usr/lib/libpcreposix.dylib: Not a directory
+makewhatis: /usr/lib/libinfo.dylib: Not a directory
+makewhatis: /usr/lib/libtzupdate.dylib: Not a directory
+makewhatis: /usr/lib/libedit.3.0.dylib: Not a directory
+makewhatis: /usr/lib/libCRFSuite0.12.dylib: Not a directory
+makewhatis: /usr/lib/libtls.15.dylib: Not a directory
+makewhatis: /usr/lib/libpython2.7.dylib: Not a directory
+makewhatis: /usr/lib/libpanel.5.4.dylib: Not a directory
+makewhatis: /usr/lib/libcsfde.dylib: Not a directory
+makewhatis: /usr/lib/libsasl2.2.0.15.dylib: Not a directory
+makewhatis: /usr/lib/libecpg.6.dylib: Not a directory
+makewhatis: /usr/lib/libMaxEnt.dylib: Not a directory
+makewhatis: /usr/lib/libmorphun.dylib: Not a directory
+makewhatis: /usr/lib/libstdc++.6.0.9.dylib: Not a directory
+makewhatis: /usr/lib/libheimdal-asn1.dylib: Not a directory
+makewhatis: /usr/lib/PN548_API.dylib: Not a directory
+makewhatis: /usr/lib/libkrb5support.dylib: Not a directory
+makewhatis: /usr/lib/libsandbox.dylib: Not a directory
+makewhatis: /usr/lib/libkrb524.dylib: Not a directory
+makewhatis: /usr/lib/libmecabra.dylib: Not a directory
+makewhatis: /usr/lib/libiconv.dylib: Not a directory
+makewhatis: /usr/lib/libsasl2.dylib: Not a directory
+makewhatis: /usr/lib/libcrypto.41.dylib: Not a directory
+makewhatis: /usr/lib/libDiagnosticMessagesClient.dylib: Not a directory
+makewhatis: /usr/lib/libTelephonyUtilDynamic.dylib: Not a directory
+makewhatis: /usr/lib/libXplugin.dylib: Not a directory
+makewhatis: /usr/lib/libcrypto.35.dylib: Not a directory
+makewhatis: /usr/lib/libxml2.dylib: Not a directory
+makewhatis: /usr/lib/libssl.0.9.7.dylib: Not a directory
+makewhatis: /usr/lib/libSystem.B.dylib: Not a directory
+makewhatis: /usr/lib/libDHCPServer.dylib: Not a directory
+makewhatis: /usr/lib/libz.1.2.5.dylib: Not a directory
+makewhatis: /usr/lib/libpgtypes.3.dylib: Not a directory
+makewhatis: /usr/lib/libform.5.4.dylib: Not a directory
+makewhatis: /usr/lib/libedit.3.dylib: Not a directory
+makewhatis: /usr/lib/libhunspell-1.2.0.dylib: Not a directory
+makewhatis: /usr/lib/libform.dylib: Not a directory
+makewhatis: /usr/lib/libtk8.5.dylib: Not a directory
+makewhatis: /usr/lib/libMTLCapture.dylib: Not a directory
+makewhatis: /usr/lib/libpgtypes.dylib: Not a directory
+makewhatis: /usr/lib/libParallelCompression.dylib: Not a directory
+makewhatis: /usr/lib/libcupsimage.dylib: Not a directory
+makewhatis: /usr/lib/libnetworkextension.dylib: Not a directory
+makewhatis: /usr/lib/libssl.43.dylib: Not a directory
+makewhatis: /usr/lib/libbsm.0.dylib: Not a directory
+makewhatis: /usr/lib/libFDR_osx.dylib: Not a directory
+makewhatis: /usr/lib/libcblas.dylib: Not a directory
+makewhatis: /usr/lib/libcrypto.dylib: Not a directory
+makewhatis: /usr/lib/libmarisa.dylib: Not a directory
+makewhatis: /usr/lib/libdscsym.dylib: Not a directory
+makewhatis: /usr/lib/libAccessibility.dylib: Not a directory
+makewhatis: /usr/lib/libAudioToolboxUtility.dylib: Not a directory
+makewhatis: /usr/lib/libAudioIssueDetector.dylib: Not a directory
+makewhatis: /usr/lib/libkrb4.dylib: Not a directory
+makewhatis: /usr/lib/libnfstorage.dylib: Not a directory
+makewhatis: /usr/lib/libimg4.dylib: Not a directory
+makewhatis: /usr/lib/libpq.dylib: Not a directory
+makewhatis: /usr/lib/libThaiTokenizer.dylib: Not a directory
+makewhatis: /usr/lib/libdbm.dylib: Not a directory
+makewhatis: /usr/lib/libodmodule.dylib: Not a directory
+makewhatis: /usr/lib/libXSEvent.dylib: Not a directory
+makewhatis: /usr/lib/libsysmon.dylib: Not a directory
+makewhatis: /usr/lib/libcharset.1.0.0.dylib: Not a directory
+makewhatis: /usr/lib/libiodbc.dylib: Not a directory
+makewhatis: /usr/lib/libate.dylib: Not a directory
+makewhatis: /usr/lib/libScreenReader.dylib: Not a directory
+makewhatis: /usr/lib/libgmalloc.dylib: Not a directory
+makewhatis: /usr/lib/libtk.dylib: Not a directory
+makewhatis: /usr/lib/libc++.dylib: Not a directory
+makewhatis: /usr/lib/libiodbc.2.dylib: Not a directory
+makewhatis: /usr/lib/libpq.5.6.dylib: Not a directory
+makewhatis: /usr/lib/libecpg_compat.3.5.dylib: Not a directory
+makewhatis: /usr/lib/libIOReport.dylib: Not a directory
+makewhatis: /usr/lib/libblas.dylib: Not a directory
+makewhatis: /usr/lib/libQMIParserDynamic.dylib: Not a directory
+makewhatis: /usr/lib/libcupolicy.dylib: Not a directory
+makewhatis: /usr/lib/libffi-trampolines.dylib: Not a directory
+makewhatis: /usr/lib/libncurses.dylib: Not a directory
+makewhatis: /usr/lib/liblzma.dylib: Not a directory
+makewhatis: /usr/lib/libMobileGestalt.dylib: Not a directory
+makewhatis: /usr/lib/libtcl.dylib: Not a directory
+makewhatis: /usr/lib/libsasl2.2.0.22.dylib: Not a directory
+makewhatis: /usr/lib/libpthread.dylib: Not a directory
+makewhatis: /usr/lib/libSecRecord.dylib: Not a directory
+makewhatis: /usr/lib/libffi.dylib: Not a directory
+makewhatis: /usr/lib/libEndpointSecurity.dylib: Not a directory
+makewhatis: /usr/lib/libCoreStorage.dylib: Not a directory
+makewhatis: /usr/lib/libboringssl.dylib: Not a directory
+makewhatis: /usr/lib/libcurl.dylib: Not a directory
+makewhatis: /usr/lib/libnfrestore.dylib: Not a directory
+makewhatis: /usr/lib/libdl.dylib: Not a directory
+makewhatis: /usr/lib/libCTGreenTeaLogger.dylib: Not a directory
+makewhatis: /usr/lib/libSMC.dylib: Not a directory
+makewhatis: /usr/lib/libcurl.4.dylib: Not a directory
+makewhatis: /usr/lib/libicucore.dylib: Not a directory
+makewhatis: /usr/lib/libusrtcp.dylib: Not a directory
+makewhatis: /usr/lib/libAppletTranslationLibrary.dylib: Not a directory
+makewhatis: /usr/lib/libodfde.dylib: Not a directory
+makewhatis: /usr/lib/libapp_launch_measurement.dylib: Not a directory
+makewhatis: /usr/lib/libpam.2.dylib: Not a directory
+makewhatis: /usr/lib/libobjc.A.dylib: Not a directory
+makewhatis: /usr/lib/libcups.dylib: Not a directory
+makewhatis: /usr/lib/libxcselect.dylib: Not a directory
+makewhatis: /usr/lib/libc++.1.dylib: Not a directory
+makewhatis: /usr/lib/libutil.dylib: Not a directory
+makewhatis: /usr/lib/liblzma.5.dylib: Not a directory
+makewhatis: /usr/lib/libtermcap.dylib: Not a directory
+makewhatis: /usr/lib/libtidy.A.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmphelpers.25.dylib: Not a directory
+makewhatis: /usr/lib/libprequelite.dylib: Not a directory
+makewhatis: /usr/lib/libipconfig.dylib: Not a directory
+makewhatis: /usr/lib/libcharset.dylib: Not a directory
+makewhatis: /usr/lib/libtls.18.dylib: Not a directory
+makewhatis: /usr/lib/libc++abi.dylib: Not a directory
+makewhatis: /usr/lib/libaprutil-1.dylib: Not a directory
+makewhatis: /usr/lib/libruby.2.6.dylib: Not a directory
+makewhatis: /usr/lib/libcurl.3.dylib: Not a directory
+makewhatis: /usr/lib/libIOAccessoryManager.dylib: Not a directory
+makewhatis: /usr/lib/libruby.dylib: Not a directory
+makewhatis: /usr/lib/libsqlite3.dylib: Not a directory
+makewhatis: /usr/lib/libldap_r.dylib: Not a directory
+makewhatis: /usr/lib/libkrb5.dylib: Not a directory
+makewhatis: /usr/lib/libicucore.A.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmpmibs.25.dylib: Not a directory
+makewhatis: /usr/lib/libbsm.dylib: Not a directory
+makewhatis: /usr/lib/libedit.2.dylib: Not a directory
+makewhatis: /usr/lib/libecpg_compat.3.dylib: Not a directory
+makewhatis: /usr/lib/libeasyperf.dylib: Not a directory
+makewhatis: /usr/lib/libIASAuthReboot.dylib: Not a directory
+makewhatis: /usr/lib/libpmenergy.dylib: Not a directory
+makewhatis: /usr/lib/libdns_services.dylib: Not a directory
+makewhatis: /usr/lib/libfakelink.dylib: Not a directory
+makewhatis: /usr/lib/liblber.dylib: Not a directory
+makewhatis: /usr/lib/libexpat.1.dylib: Not a directory
+makewhatis: /usr/lib/libIOGTrace.dylib: Not a directory
+makewhatis: /usr/lib/libreadline.dylib: Not a directory
+makewhatis: /usr/lib/libhunspell-1.2.0.0.0.dylib: Not a directory
+makewhatis: /usr/lib/libgssapi_krb5.dylib: Not a directory
+makewhatis: /usr/lib/ssh-keychain.dylib: Not a directory
+makewhatis: /usr/lib/libssl.46.dylib: Not a directory
+makewhatis: /usr/lib/libtidy.dylib: Not a directory
+makewhatis: /usr/lib/libapple_nghttp2.dylib: Not a directory
+makewhatis: /usr/lib/libsasl2.2.0.21.dylib: Not a directory
+makewhatis: /usr/lib/libbz2.1.0.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmpmibs.dylib: Not a directory
+makewhatis: /usr/lib/libAccountPolicyTranslation.dylib: Not a directory
+makewhatis: /usr/lib/libmenu.5.4.dylib: Not a directory
+makewhatis: /usr/lib/libpgtypes.3.4.dylib: Not a directory
+makewhatis: /usr/lib/libxslt.dylib: Not a directory
+makewhatis: /usr/lib/libz.1.dylib: Not a directory
+makewhatis: /usr/lib/libaprutil-1.0.dylib: Not a directory
+makewhatis: /usr/lib/libk5crypto.dylib: Not a directory
+makewhatis: /usr/lib/libpython.dylib: Not a directory
+makewhatis: /usr/lib/libcrypto.0.9.8.dylib: Not a directory
+makewhatis: /usr/lib/libpcap.A.dylib: Not a directory
+makewhatis: /usr/lib/libhunspell-1.2.dylib: Not a directory
+makewhatis: /usr/lib/libUniversalAccess.dylib: Not a directory
+makewhatis: /usr/lib/libstdc++.dylib: Not a directory
+makewhatis: /usr/lib/libgcc_s.1.dylib: Not a directory
+makewhatis: /usr/lib/libenergytrace.dylib: Not a directory
+makewhatis: /usr/lib/libDHCPServer.A.dylib: Not a directory
+makewhatis: /usr/lib/libcoretls_cfhelpers.dylib: Not a directory
+makewhatis: /usr/lib/libpam.1.dylib: Not a directory
+makewhatis: /usr/lib/libm.dylib: Not a directory
+makewhatis: /usr/lib/libmx.dylib: Not a directory
+makewhatis: /usr/lib/PN548_HAL.dylib: Not a directory
+makewhatis: /usr/lib/libmenu.dylib: Not a directory
+makewhatis: /usr/lib/libedit.dylib: Not a directory
+makewhatis: /usr/lib/libapr-1.0.dylib: Not a directory
+makewhatis: /usr/lib/libz.1.1.3.dylib: Not a directory
+makewhatis: /usr/lib/libnetsnmphelpers.dylib: Not a directory
+makewhatis: /usr/lib/AppleConvergedTransport.dylib: Not a directory
+makewhatis: /usr/lib/libnfshared.dylib: Not a directory
+makewhatis: /usr/lib/libexslt.dylib: Not a directory
+makewhatis: /usr/lib/libecpg_compat.dylib: Not a directory
+makewhatis: /usr/lib/libauditd.0.dylib: Not a directory
+makewhatis: /usr/lib/libiodbcinst.2.dylib: Not a directory
+makewhatis: /usr/lib/libssl.44.dylib: Not a directory
+maclab-109:~ benko005$ info coreutinl
+maclab-109:~ benko005$ info coreutild
+maclab-109:~ benko005$ info coreutils
+maclab-109:~ benko005$ cd /usr; ls; cd -
+X11		bin		libexec		sbin		standalone
+X11R6		lib		local		share
+/Users/benko005
+maclab-109:~ benko005$ type test
+test is a shell builtin
+maclab-109:~ benko005$ type foo
+-bash: type: foo: not found
+maclab-109:~ benko005$ alias foo='cd /usr; ls; cd -'
+maclab-109:~ benko005$ alias name='string'
+maclab-109:~ benko005$ foo
+X11		bin		libexec		sbin		standalone
+X11R6		lib		local		share
+/Users/benko005
+maclab-109:~ benko005$ type foo
+foo is aliased to `cd /usr; ls; cd -'
+maclab-109:~ benko005$ unalias foo
+maclab-109:~ benko005$ type foo
+-bash: type: foo: not found
+maclab-109:~ benko005$ type ls
+ls is hashed (/bin/ls)
+maclab-109:~ benko005$ alian
+-bash: alian: command not found
+maclab-109:~ benko005$ alias
+alias name='string'
+maclab-109:~ benko005$ 
