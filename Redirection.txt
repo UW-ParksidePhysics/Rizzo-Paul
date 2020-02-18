@@ -1,0 +1,54 @@
+Last login: Tue Feb 18 14:02:41 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+maclab-109:~ benko005$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+maclab-109:~ benko005$ cd PycharmProjects
+maclab-109:PycharmProjects benko005$ ls
+Rizzo-Paul	untitled
+maclab-109:PycharmProjects benko005$ cd Rizzo-Paul
+maclab-109:Rizzo-Paul benko005$ cd ..
+maclab-109:PycharmProjects benko005$ cd ..
+maclab-109:~ benko005$ ls -l /benko005/bin > ls-output.txt
+ls: /benko005/bin: No such file or directory
+maclab-109:~ benko005$ ls -l /benko005 > ls-output.txt
+ls: /benko005: No such file or directory
+maclab-109:~ benko005$ ls -l > ls-output.txt
+maclab-109:~ benko005$ ls -l /usr/bin > ls-output.txt
+maclab-109:~ benko005$ cd ls -l ls-outpu.txt
+-bash: cd: ls: No such file or directory
+maclab-109:~ benko005$ less ls-output.txt
+maclab-109:~ benko005$ ls -l /bin/usr > ls-output.txt
+ls: /bin/usr: No such file or directory
+maclab-109:~ benko005$ ls -l ls-output.txt
+-rw-r--r--  1 benko005  UWP\Domain Users  0 Feb 18 14:13 ls-output.txt
+maclab-109:~ benko005$ > ls-output.txt
+maclab-109:~ benko005$ ls -l /usr/bin >> ls-outpit.txt
+maclab-109:~ benko005$ ls -l /usr/bin >> ls-output.txt
+maclab-109:~ benko005$ ls -l /usr/bin >> ls-output.txt
+maclab-109:~ benko005$ ls -l /usr/bin >> ls-output.txt
+maclab-109:~ benko005$ ls -l /usr/bin >> ls-output.txt
+maclab-109:~ benko005$ ls -l ls-output.txt
+-rw-r--r--  1 benko005  UWP\Domain Users  266056 Feb 18 14:18 ls-output.txt
+maclab-109:~ benko005$ ls -l /bin/usr 2> ls-error.txt
+maclab-109:~ benko005$ ls -l /bin/usr > ls-output.txt 2>&1
+maclab-109:~ benko005$ ls -l /bin/usr &>> ls-output.txt
+-bash: syntax error near unexpected token `>'
+maclab-109:~ benko005$ ls -l /bin/usr 2>> ls-output.txt
+maclab-109:~ benko005$ ls -l /bin/usr 2> /dev/null
+maclab-109:~ benko005$ type ls-output.txt
+-bash: type: ls-output.txt: not found
+maclab-109:~ benko005$ cat ls-output.txt
+ls: /bin/usr: No such file or directory
+ls: /bin/usr: No such file or directory                             ^[[D^[[D^[[maclab-109:~ benko005$ logout
+Saving session...[[B^[[B^[[B^[[A^[[A^[[B^[[A^[[B^[[A^[[B^[[A^[[B^[[A^D      
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+[Process completed]
+
