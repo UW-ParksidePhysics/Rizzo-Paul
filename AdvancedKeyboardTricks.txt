@@ -1,0 +1,475 @@
+Last login: Thu Feb 20 14:36:10 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+maclab-109:~ benko005$ git add . SeeingTheWorldAsTheShellSeeIt.txt 
+fatal: not a git repository (or any of the parent directories): .git
+maclab-109:~ benko005$ cd PycharmProjects/Rizzo-Paul
+maclab-109:Rizzo-Paul benko005$ git add . SeeingTheWorldAsTheShellSeeIt.txt 
+maclab-109:Rizzo-Paul benko005$ git commit
+hint: Waiting for your editor to close the file... 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+maclab-109:Rizzo-Paul benko005$ git add SeeingTheWorldAsTheShellSeeIt.txt 
+maclab-109:Rizzo-Paul benko005$ git commit
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+maclab-109:Rizzo-Paul benko005$ git add SeeingTheWorldAsTheShellSeeIt.txt
+maclab-109:Rizzo-Paul benko005$ git commit -m "yeetsssss"
+[master ab1ef53] yeetsssss
+ Committer: Rizzo <benko005@maclab-109.uwp.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 685 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/Rizzo-Paul.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 SeeingTheWorldAsTheShellSeeIt.txt
+maclab-109:Rizzo-Paul benko005$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 7.04 KiB | 7.04 MiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/UW-ParksidePhysics/Rizzo-Paul.git
+   e1cc707..ab1ef53  master -> master
+maclab-109:Rizzo-Paul benko005$ clear
+
+maclab-109:Rizzo-Paul benko005$ history
+    1  ls
+    2  ls /usr
+    3  ls ~ /usr
+    4  /usr:
+    5  ls -l
+    6  ls -lt
+    7  ls -lt --reverse
+    8  -l
+    9  file WhatIsTheShell_gamma
+   10  file WhatIsTheShell_gamma.txt
+   11  /bin
+   12  file WhatIsTheShell_gamma.txt
+   13  file WhatIsTheShell_Gamma.txt
+   14  file WhatIsTheShell_Gamma.txt
+   15  ls
+   16  ls benko005
+   17  ls /benko005
+   18  ls /us
+   19  ls /usr
+   20  ls ~ /usr
+   21  ls ~ /usr/Documents
+   22  ls ~ /usr/Documents
+   23  ls ~ /usr ~ /Documents
+   24  less 
+   25  less Terminal_Saved_Output.xt
+   26  less Terminal_Saved_Output.txt
+   27  pwd
+   28  cd Documents
+   29  less Terminal_Saved_Output.txt
+   30  ls
+   31  less Navigationxt
+   32  less Navigation.txt
+   33  mv ExporingTheSystem.txt
+   34  mv PycharmProjects
+   35  mv PycharmProjects Paulie-Rizzo
+   36  mv ExporingTheSystem.txt
+   37  mv PycharmProjects Paulie-Rizzo
+   38  mv
+   39  git add
+   40  git comit
+   41  git push
+   42  cd
+   43  ls
+   44  cp
+   45  mv
+   46  mkdir
+   47  rm
+   48  ln
+   49  ls
+   50  cd Documents
+   51  ls
+   52  mkdir dir1
+   53  cd dir1
+   54  cd Documents
+   55  cp ..
+   56  cd..
+   57  cd ..
+   58  mkdir1 dir2
+   59  mkdir dir2
+   60  cp dir1 library
+   61  cp dir1 library
+   62  ls
+   63  cp Navigation.txt dir1
+   64  cd dir1
+   65  ls
+   66  rm Navigation.txt
+   67  cd ..
+   68  mv -i Navigation.txt dir1
+   69  mv dir1 dir2
+   70  rm dir2
+   71  cd dir1
+   72  cd dir2
+   73  cd dir1
+   74  cp Navigation.txt Documents
+   75  cp Navigation.txt dir2
+   76  cp Navigation.txt dir2
+   77  rm Documents
+   78  rm -l dir2
+   79  y
+   80  ln Navigation.txt link
+   81  ln -s Navigation.txt link
+   82  ln -r Navigation.txt link
+   83  cd..
+   84  cd..
+   85  cd ..
+   86  rm -r dir1
+   87  cd ..
+   88  cp Navigation.txt
+   89  ln -s ExploringTheSystem.txt link
+   90  ls
+   91  ls -l
+   92  mv ExploringTheSystem.txt dir2
+   93  cd dir2
+   94  cp -v /ExploringTheSystem.txt/passwd
+   95  /benko005/bin
+   96  type
+   97  type type
+   98  type type type
+   99  type type type type
+  100  type rm
+  101  cd Documnts
+  102  cd Documents
+  103  cd ./PycharmProjects/Rizzo-Paul
+  104  cd ./PycharmProjects/Rizzo-Paul git add
+  105  cd ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories
+  106  cd ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories.txt
+  107  cd ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories.txt git add
+  108  cd ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories.txt
+  109  ls
+  110  cd ..
+  111  ls
+  112  cd PycharmProjects
+  113  ls
+  114  mv
+  115  m
+  116  cd ..
+  117  cd Documents
+  118  mv ManipulaingFilesAndDirectoies.txt 
+  119  PycharmProjects
+  120  mv ManipulaingFilesAndDirectoies.txt PycharmProjects
+  121  cd ..
+  122  ls
+  123  cd PycharmProjects
+  124  cd ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories.txt
+  125  mv ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories.txt
+  126  git add
+  127  mv ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories.txt git add
+  128  mv ./PycharmProjects/Rizzo-Paul/ManipulatingFilesAndDirectories.txt gitadd
+  129  cd Rizzo-Paul
+  130  git add ManipulatingFilesAndDirectories.txt 
+  131  git commit -m "yeetucus"
+  132  git push
+  133  git add ManipulatingFilesAndDirectories.txt 
+  134  git commit -m "yeetucus"
+  135   
+  136  git add ManipulatingFilesAndDirectories.txt 
+  137  git commit -m "yeetucus"
+  138  ls
+  139  git add ManipulatingFilesAndDirectories.txt 
+  140  git commit -m "yeetucus"
+  141  git add ManipulatingFilesAndDirectories.txt 
+  142  git commit -m "yeetucus"
+  143  manbash
+  144  man bash
+  145  ls
+  146  cd PycharmProjects/Rizzo-Paul/
+  147  git add ManipulatingFilesAndDirectories.txt 
+  148  git commit -m "yeetucus"
+  149  l
+  150  ls
+  151  mv ManipulatingFilesAndDirectories.txt PycharmProjects
+  152  mv PycharmProjects ManipulatingFilesAndDirectories.txt
+  153  mv ManipulatingFilesAndDirectories.txt..   PycharmProjects
+  154  mv ManipulatingFilesAndDirectories.txt   PycharmProjects
+  155  mv PycharmProjects ManipulatingFilesAndDirectories.txt
+  156  type
+  157  which
+  158  help
+  159  man
+  160  all
+  161  apropos
+  162  info
+  163  whatis
+  164  alais
+  165  type type
+  166  type ls
+  167  type cp
+  168  which ls
+  169  man program
+  170  man Pycharm
+  171  man PycharmPojects
+  172  man ls
+  173  man 5 paswd
+  174  apropos floppy
+  175  whatis ls
+  176  info coreutils
+  177  cd /usr; ls; cd -
+  178  git add ManipulatingFilesAndDirectories.txt 
+  179  git commit -m "yeetucus"
+  180  ls
+  181  cd PycharmProjects/Rizzo-Paul/
+  182  git add ManipulatingFilesAndDirectories.txt 
+  183  git commit -m "yeetucus"
+  184  ls
+  185  cd PycharmProjects
+  186  ls
+  187  cd Rizzo-Paul
+  188  cd ..
+  189  cd ..
+  190  ls -l /benko005/bin > ls-output.txt
+  191  ls -l /benko005 > ls-output.txt
+  192  ls -l > ls-output.txt
+  193  ls -l /usr/bin > ls-output.txt
+  194  cd ls -l ls-outpu.txt
+  195  less ls-output.txt
+  196  ls -l /bin/usr > ls-output.txt
+  197  ls -l ls-output.txt
+  198  > ls-output.txt
+  199  ls -l /usr/bin >> ls-outpit.txt
+  200  ls -l /usr/bin >> ls-output.txt
+  201  ls -l /usr/bin >> ls-output.txt
+  202  ls -l /usr/bin >> ls-output.txt
+  203  ls -l /usr/bin >> ls-output.txt
+  204  ls -l ls-output.txt
+  205  ls -l /bin/usr 2> ls-error.txt
+  206  ls -l /bin/usr > ls-output.txt 2>&1
+  207  ls -l /bin/usr &>> ls-output.txt
+  208  ls -l /bin/usr 2>> ls-output.txt
+  209  ls -l /bin/usr 2> /dev/null
+  210  type ls-output.txt
+  211  cat ls-output.txt
+  212  cat
+  213  cat
+  214  cat
+  215  cat > lazy_dog.txt
+  216  cat < lazy_dog.txt
+  217  ls -l /usr/bin | less
+  218  ls /bin /usr/bin | sort | less
+  219  ls /bin /usr/bin | sort | uniq | less
+  220  ls /bin /usr/bin | sort | uniq -d | less
+  221  ls /bin /usr/bin | sort | uniq -d | less
+  222  ls /bin /usr/bin | sort | uniq | grep zip
+  223  head -n 5 ls-output.txt
+  224  wc ls-output.txt
+  225  head -5 5 ls-output.txt
+  226  head -n 5 ls-output.txt
+  227  tail -n 5 ls-output.txt
+  228  ls /usr/bin | tail -n 5
+  229  tail -f /var/log/messages
+  230  ls /usr/bin | tee ls.txt | grep zip
+  231  ls
+  232  cd Documents
+  233  cd ..
+  234  cd PycharmProjects
+  235  cd Rizzo-Paul
+  236  pwd
+  237  git status
+  238  ls
+  239  git add ManipulatingFilesAndDirectories.txt 
+  240  git commmit -m "Yeeticus"
+  241  git commit -m "Yeeticus"
+  242  git add ManipulatingFilesAndDirectories.txt 
+  243  git push
+  244  git pull
+  245  ls
+  246  git status
+  247  git push
+  248  ls
+  249  echo $((5**2) * 3))
+  250  echo $(((5**2) * 3))
+  251  echo Fie divided by two equals$((5/2))
+  252  echo Five divided by two equals$((5/2))
+  253  echo Five divided by two equals $((5/2))
+  254  echo with $((5%2)) left over
+  255  echo front-{A,B,C}-Back
+  256  echo {1.5}
+  257  echo {1..15}
+  258  echo {001..15}
+  259  echo {Z..A}
+  260  echo a{A{1,2},B{3,4}}b
+  261  echo $USER
+  262  printevn | less
+  263  echo $SUER
+  264  echo $(ls)
+  265  ls -l $(which cp)
+  266  file $(ls -d /usr/bin/* | grep zip)
+  267  ls -l 'which cp'
+  268  echo this is a         teat
+  269  echo this is a         test*
+  270  echo The total is $100.00
+  271  ls -l two words.txt
+  272  ls -l "two words.txt"
+  273  mv "two words.txt" two_words.txt
+  274  echo "$USER $(((2+2)) $(cal)"
+  275  echo "$USER $(((2+2)) $(cal)"
+  276  echo "this is a    test
+  277  echo "$USER $(((2+2)) $(cal)"
+  278  echo "$USER $(((2+2)) $(cal)"
+  279  echo "this is a    test"
+  280  echo $(cal)
+  281  echo "$(cal)"
+  282  echo ext ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
+  283  echo "ext ~/*.txt {a,b} $(echo foo) $((2+2)) $USER"
+  284  echo 'ext ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
+  285  echo "The balance for the user $USER is: \%5.00'
+  286  echo "The balance for the user $USER is: \%5.00"
+  287  echo $cal)
+  288  echo ($cal)
+  289  echo $(cal)
+  290  echo "$(cal)"
+  291  echo '$(cal)'
+  292  mv bad\filename good_filename
+  293  \a
+  294  \b
+  295  ls
+  296  cd Documents
+  297  ls
+  298  mv SeeingTheWorldAsTheShellSeeIt.txt `/PycharmProjects/Rizzo-Paul
+  299  mv SeeingTheWorldAsTheShellSeeIt.txt ~/PycharmProjects/Rizzo-Paul
+  300  cd Documents
+  301  mv SeeingTheWorldAsTheShellSeeIt.txt ~/PycharmProjects/Rizzo-Paul
+  302  ls
+  303  cd ..
+  304  cd
+  305  ls
+  306  cd PycharmProjects/Rizzo-Paul
+  307  ls
+  308  git add
+  309  git add . SeeingTheWorldAsTheShellSeeIt.txt 
+  310  git commit
+  311  git add . SeeingTheWorldAsTheShellSeeIt.txt 
+  312  cd PycharmProjects/Rizzo-Paul
+  313  git add . SeeingTheWorldAsTheShellSeeIt.txt 
+  314  git commit
+  315  git add SeeingTheWorldAsTheShellSeeIt.txt 
+  316  git commit
+  317  git add SeeingTheWorldAsTheShellSeeIt.txt
+  318  git commit -m "yeetsssss"
+  319  git push
+  320  clear
+  321  history
+maclab-109:Rizzo-Paul benko005$ 
+maclab-109:Rizzo-Paul benko005$ ls
+ExploringTheSystem.txt			Redirection2.txt
+ExporingTheSystem2.txt			SeeingTheWorldAsTheShellSeeIt.txt
+ManipulatingFilesAndDirectories.txt	WhatIsTheShell_Gamma.txt
+README.md				WorkingWithCommands.txt
+Redirection.txt
+maclab-109:Rizzo-Paul benko005$ cd ..
+maclab-109:PycharmProjects benko005$ cd ..
+maclab-109:~ benko005$ ls
+Applications	Downloads	Music		PycharmProjects	ls-outpit.txt
+Desktop		Library		Pictures	lazy_dog.txt	ls-output.txt
+Documents	Movies		Public		ls-error.txt	ls.txt
+maclab-109:~ benko005$ cd Document
+-bash: cd: Document: No such file or directory
+maclab-109:~ benko005$ cd Documents
+maclab-109:Documents benko005$ ls link 
+link
+maclab-109:Documents benko005$ ls link 
+.DS_Store                  5                          Terminal Saved Output.txt  link
+.localized                 ExporingTheSystem2.txt     dir2/                      
+maclab-109:Documents benko005$ ls link 
+.DS_Store                  5                          Terminal Saved Output.txt  link
+.localized                 ExporingTheSystem2.txt     dir2/                      
+maclab-109:Documents benko005$ ls link 
+.DS_Store                  5                          Terminal Saved Output.txt  link
+.localized                 ExporingTheSystem2.txt     dir2/                      
+maclab-109:Documents benko005$ ls link 
+.DS_Store                  5                          Terminal Saved Output.txt  link
+.localized                 ExporingTheSystem2.txt     dir2/                      
+maclab-109:Documents benko005$ history | less
+maclab-109:Documents benko005$ history | grep /usr/bin
+  193  ls -l /usr/bin > ls-output.txt
+  199  ls -l /usr/bin >> ls-outpit.txt
+  200  ls -l /usr/bin >> ls-output.txt
+  201  ls -l /usr/bin >> ls-output.txt
+  202  ls -l /usr/bin >> ls-output.txt
+  203  ls -l /usr/bin >> ls-output.txt
+  217  ls -l /usr/bin | less
+  218  ls /bin /usr/bin | sort | less
+  219  ls /bin /usr/bin | sort | uniq | less
+  220  ls /bin /usr/bin | sort | uniq -d | less
+  221  ls /bin /usr/bin | sort | uniq -d | less
+  222  ls /bin /usr/bin | sort | uniq | grep zip
+  228  ls /usr/bin | tail -n 5
+  230  ls /usr/bin | tee ls.txt | grep zip
+  266  file $(ls -d /usr/bin/* | grep zip)
+  330  history | grep /usr/bin
+maclab-109:Documents benko005$ !88
+cp Navigation.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-109:Documents benko005$ ls
+5				Terminal Saved Output.txt	link
+ExporingTheSystem2.txt		dir2
+maclab-109:Documents benko005$ history | grep /usr/bin
+  193  ls -l /usr/bin > ls-output.txt
+  199  ls -l /usr/bin >> ls-outpit.txt
+  200  ls -l /usr/bin >> ls-output.txt
+  201  ls -l /usr/bin >> ls-output.txt
+  202  ls -l /usr/bin >> ls-output.txt
+  203  ls -l /usr/bin >> ls-output.txt
+  217  ls -l /usr/bin | less
+  218  ls /bin /usr/bin | sort | less
+  219  ls /bin /usr/bin | sort | uniq | less
+  220  ls /bin /usr/bin | sort | uniq -d | less
+  221  ls /bin /usr/bin | sort | uniq -d | less
+  222  ls /bin /usr/bin | sort | uniq | grep zip
+  228  ls /usr/bin | tail -n 5
+  230  ls /usr/bin | tee ls.txt | grep zip
+  266  file $(ls -d /usr/bin/* | grep zip)
+  330  history | grep /usr/bin
+  333  history | grep /usr/bin
+maclab-109:Documents benko005$ ls -l /usr/bin > ls-output.txt
+maclab-109:Documents benko005$ 
