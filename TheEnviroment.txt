@@ -1,0 +1,487 @@
+Last login: Thu Feb 20 14:44:58 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+maclab-109:~ benko005$ sudo cp myfile.txt ~tony
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-109:~ benko005$ :/
+-bash: :/: No such file or directory
+maclab-109:~ benko005$ sudo ls -l ~tony/myfile.xt
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-109:~ benko005$ sudo mkdir /usr/local/share/Music
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-109:~ benko005$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-109:~ benko005$ sudo chown :music /usr/local/share/Music
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-109:~ benko005$ sudo chmod 775 /usr/local/share/Music
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-109:~ benko005$ 
+maclab-109:~ benko005$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-109:~ benko005$ >/usr/local/share/Music/test_file
+-bash: /usr/local/share/Music/test_file: No such file or directory
+maclab-109:~ benko005$ ls -l /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-109:~ benko005$ s
+-bash: s: command not found
+maclab-109:~ benko005$ ls
+Applications	Downloads	Music		PycharmProjects	ls-outpit.txt
+Desktop		Library		Pictures	lazy_dog.txt	ls-output.txt
+Documents	Movies		Public		ls-error.txt	ls.txt
+maclab-109:~ benko005$ sudo chmod g+s /usr/local/share/Music
+Password:
+Sorry, try again.
+Password:
+benko005 is not in the sudoers file.  This incident will be reported.
+maclab-109:~ benko005$ umask 0002
+maclab-109:~ benko005$ 
+  [Restored Feb 25, 2020 at 1:06:15 PM]
+Last login: Tue Feb 25 13:06:14 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+maclab-109:~ benko005$ ls
+Applications	Documents	Library		Music		Public		lazy_dog.txt	ls-outpit.txt	ls.txt
+Desktop		Downloads	Movies		Pictures	PycharmProjects	ls-error.txt	ls-output.txt
+maclab-109:~ benko005$ cd D
+Desktop/   Documents/ Downloads/ 
+maclab-109:~ benko005$ cd Documents/
+maclab-109:Documents benko005$ ls
+5.txt				Processes.txt			bashrc				ls-output.txt
+ExporingTheSystem2.txt		Terminal Saved Output		dir2
+Permissions			Terminal Saved Output.txt	link
+maclab-109:Documents benko005$ mv Processes.txt cd..
+maclab-109:Documents benko005$ mv cd.. Processes.txt
+maclab-109:Documents benko005$ mv Processes.txt  PycharmProjects
+maclab-109:Documents benko005$ mv PycharmProjects Processes.txt
+maclab-109:Documents benko005$ pwd
+/Users/benko005/Documents
+maclab-109:Documents benko005$ mv Processes.txt .
+mv: Processes.txt and ./Processes.txt are identical
+maclab-109:Documents benko005$ l
+s-bash: l: command not found
+maclab-109:Documents benko005$ sl
+-bash: sl: command not found
+maclab-109:Documents benko005$ ls
+5.txt				Processes.txt			bashrc				ls-output.txt
+ExporingTheSystem2.txt		Terminal Saved Output		dir2
+Permissions			Terminal Saved Output.txt	link
+maclab-109:Documents benko005$ mv ~/Documents/Processes.txt .
+mv: /Users/benko005/Documents/Processes.txt and ./Processes.txt are identical
+maclab-109:Documents benko005$ mv ~/Documents/Processes.txt ..
+maclab-109:Documents benko005$ ls
+5.txt				Terminal Saved Output		dir2
+ExporingTheSystem2.txt		Terminal Saved Output.txt	link
+Permissions			bashrc				ls-output.txt
+maclab-109:Documents benko005$ cd ..
+maclab-109:~ benko005$ ls
+Applications	Documents	Library		Music		Processes.txt	PycharmProjects	ls-error.txt	ls-output.txt
+Desktop		Downloads	Movies		Pictures	Public		lazy_dog.txt	ls-outpit.txt	ls.txt
+maclab-109:~ benko005$ mv Processes.txt PycharmProjects/Rizzo-Paul/
+maclab-109:~ benko005$ cd PycharmProjects/Rizzo-Paul/
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt		Processes.txt				SeeingTheWorldAsTheShellSeeIt.txt
+ExploringTheSystem.txt			README.md				WhatIsTheShell_Gamma.txt
+ExporingTheSystem2.txt			Redirection.txt				WorkingWithCommands.txt
+ManipulatingFilesAndDirectories.txt	Redirection2.txt			foo.xt
+maclab-109:Rizzo-Paul benko005$ git ad Processes.txt 
+git: 'ad' is not a git command. See 'git --help'.
+
+The most similar commands are
+	add
+	am
+maclab-109:Rizzo-Paul benko005$ git add Processes.txt 
+maclab-109:Rizzo-Paul benko005$ git commit -m "Hello World"
+[master bb96b7f] Hello World
+ Committer: Rizzo <benko005@maclab-109.uwp.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 947 insertions(+)
+ create mode 100644 Processes.txt
+maclab-109:Rizzo-Paul benko005$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 13.70 KiB | 6.85 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/UW-ParksidePhysics/Rizzo-Paul.git
+   f65a918..bb96b7f  master -> master
+maclab-109:Rizzo-Paul benko005$ clear
+
+maclab-109:Rizzo-Paul benko005$ printevn
+-bash: printevn: command not found
+maclab-109:Rizzo-Paul benko005$ printenv
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/23/0dkn620d5zb1r6k41srnb3dm8c1p_m/T/
+TERM_PROGRAM_VERSION=433
+TERM_SESSION_ID=3FF5A0BE-4EC4-4348-8A55-547FDDF03D3F
+USER=benko005
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.JrWPSUt2yT/Listeners
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+LaunchInstanceID=6F975794-5C19-4967-B05F-57F6FDD401AE
+PWD=/Users/benko005/PycharmProjects/Rizzo-Paul
+LANG=en_US.UTF-8
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/benko005
+LOGNAME=benko005
+SECURITYSESSIONID=18705
+_=/usr/bin/printenv
+OLDPWD=/Users/benko005
+maclab-109:Rizzo-Paul benko005$ set
+BASH=/bin/bash
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_LINENO=()
+BASH_REMATCH=([0]="l")
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="3" [1]="2" [2]="57" [3]="1" [4]="release" [5]="x86_64-apple-darwin19")
+BASH_VERSION='3.2.57(1)-release'
+COLUMNS=131
+DIRSTACK=()
+EUID=281074004
+GROUPS=()
+HISTFILE=/Users/benko005/.bash_sessions/3FF5A0BE-4EC4-4348-8A55-547FDDF03D3F.historynew
+HISTFILESIZE=500
+HISTSIZE=500
+HOME=/Users/benko005
+HOSTNAME=maclab-109.uwp.edu
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=en_US.UTF-8
+LINES=42
+LOGNAME=benko005
+LaunchInstanceID=6F975794-5C19-4967-B05F-57F6FDD401AE
+MACHTYPE=x86_64-apple-darwin19
+MAILCHECK=60
+OLDPWD=/Users/benko005
+OPTERR=1
+OPTIND=1
+OSTYPE=darwin19
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PIPESTATUS=([0]="0")
+PPID=5380
+PROMPT_COMMAND=update_terminal_cwd
+PS1='\h:\W \u\$ '
+PS2='> '
+PS4='+ '
+PWD=/Users/benko005/PycharmProjects/Rizzo-Paul
+SECURITYSESSIONID=18705
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHELL_SESSION_DID_HISTORY_CHECK=1
+SHELL_SESSION_DID_INIT=1
+SHELL_SESSION_DIR=/Users/benko005/.bash_sessions
+SHELL_SESSION_FILE=/Users/benko005/.bash_sessions/3FF5A0BE-4EC4-4348-8A55-547FDDF03D3F.session
+SHELL_SESSION_HISTFILE=/Users/benko005/.bash_sessions/3FF5A0BE-4EC4-4348-8A55-547FDDF03D3F.history
+SHELL_SESSION_HISTFILE_NEW=/Users/benko005/.bash_sessions/3FF5A0BE-4EC4-4348-8A55-547FDDF03D3F.historynew
+SHELL_SESSION_HISTFILE_SHARED=/Users/benko005/.bash_history
+SHELL_SESSION_HISTORY=1
+SHELL_SESSION_TIMESTAMP_FILE=/Users/benko005/.bash_sessions/_expiration_check_timestamp
+SHLVL=1
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.JrWPSUt2yT/Listeners
+TERM=xterm-256color
+TERM_PROGRAM=Apple_Terminal
+TERM_PROGRAM_VERSION=433
+TERM_SESSION_ID=3FF5A0BE-4EC4-4348-8A55-547FDDF03D3F
+TMPDIR=/var/folders/23/0dkn620d5zb1r6k41srnb3dm8c1p_m/T/
+UID=281074004
+USER=benko005
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+_=printenv
+shell_session_delete_expired () 
+{ 
+    if ( [ ! -e "$SHELL_SESSION_TIMESTAMP_FILE" ] || [ -z "$(/usr/bin/find "$SHELL_SESSION_TIMESTAMP_FILE" -mtime -1d)" ] ); then
+        local expiration_lock_file="$SHELL_SESSION_DIR/_expiration_lockfile";
+        if /usr/bin/shlock -f "$expiration_lock_file" -p $$; then
+            echo -n 'Deleting expired sessions...';
+            local delete_count=$(/usr/bin/find "$SHELL_SESSION_DIR" -type f -mtime +2w -print -delete | /usr/bin/wc -l);
+            [ "$delete_count" -gt 0 ] && echo $delete_count' completed.' || echo 'none found.';
+            ( umask 077;
+            /usr/bin/touch "$SHELL_SESSION_TIMESTAMP_FILE" );
+            /bin/rm "$expiration_lock_file";
+        fi;
+    fi
+}
+shell_session_history_allowed () 
+{ 
+    if [ -n "$HISTFILE" ]; then
+        local allowed=0;
+        if shopt -q histappend || [ -n "$HISTTIMEFORMAT" ]; then
+            allowed=${SHELL_SESSION_HISTORY:-0};
+        else
+            allowed=${SHELL_SESSION_HISTORY:=1};
+        fi;
+        if [ $allowed -eq 1 ]; then
+            return 0;
+        fi;
+    fi;
+    return 1
+}
+shell_session_history_check () 
+{ 
+    if [ ${SHELL_SESSION_DID_HISTORY_CHECK:-0} -eq 0 ]; then
+        SHELL_SESSION_DID_HISTORY_CHECK=1;
+        if shell_session_history_allowed; then
+            shell_session_history_enable;
+        fi;
+        if [ "$PROMPT_COMMAND" = "shell_session_history_check" ]; then
+            unset PROMPT_COMMAND;
+        else
+            if [[ $PROMPT_COMMAND =~ (.*)(; *shell_session_history_check *| *shell_session_history_check *; *)(.*) ]]; then
+                PROMPT_COMMAND="${BASH_REMATCH[1]}${BASH_REMATCH[3]}";
+            fi;
+        fi;
+    fi
+}
+shell_session_history_enable () 
+{ 
+    ( umask 077;
+    /usr/bin/touch "$SHELL_SESSION_HISTFILE_NEW" );
+    HISTFILE="$SHELL_SESSION_HISTFILE_NEW";
+    SHELL_SESSION_HISTORY=1
+}
+shell_session_save () 
+{ 
+    if [ -n "$SHELL_SESSION_FILE" ]; then
+        echo -n 'Saving session...';
+        ( umask 077;
+        echo 'echo Restored session: "$(/bin/date -r '$(/bin/date +%s)')"' >|"$SHELL_SESSION_FILE" );
+        declare -F shell_session_save_user_state > /dev/null && shell_session_save_user_state;
+        shell_session_history_allowed && shell_session_save_history;
+        echo 'completed.';
+    fi
+}
+shell_session_save_history () 
+{ 
+    shell_session_history_enable;
+    history -a;
+    if [ -f "$SHELL_SESSION_HISTFILE_SHARED" ] && [ ! -s "$SHELL_SESSION_HISTFILE" ]; then
+        echo -ne '\n...copying shared history...';
+        ( umask 077;
+        /bin/cp "$SHELL_SESSION_HISTFILE_SHARED" "$SHELL_SESSION_HISTFILE" );
+    fi;
+    echo -ne '\n...saving history...';
+    ( umask 077;
+    /bin/cat "$SHELL_SESSION_HISTFILE_NEW" >> "$SHELL_SESSION_HISTFILE_SHARED" );
+    ( umask 077;
+    /bin/cat "$SHELL_SESSION_HISTFILE_NEW" >> "$SHELL_SESSION_HISTFILE" );
+    : >|"$SHELL_SESSION_HISTFILE_NEW";
+    if [ -n "$HISTFILESIZE" ]; then
+        echo -n 'truncating history files...';
+        HISTFILE="$SHELL_SESSION_HISTFILE_SHARED";
+        HISTFILESIZE="$HISTFILESIZE";
+        HISTFILE="$SHELL_SESSION_HISTFILE";
+        HISTFILESIZE="$size";
+        HISTFILE="$SHELL_SESSION_HISTFILE_NEW";
+    fi;
+    echo -ne '\n...'
+}
+shell_session_update () 
+{ 
+    shell_session_save && shell_session_delete_expired
+}
+update_terminal_cwd () 
+{ 
+    local url_path='';
+    { 
+        local i ch hexch LC_CTYPE=C LC_ALL=;
+        for ((i = 0; i < ${#PWD}; ++i))
+        do
+            ch="${PWD:i:1}";
+            if [[ "$ch" =~ [/._~A-Za-z0-9-] ]]; then
+                url_path+="$ch";
+            else
+                printf -v hexch "%02X" "'$ch";
+                url_path+="%${hexch: -2:2}";
+            fi;
+        done
+    };
+    printf '\e]7;%s\a' "file://$HOSTNAME$url_path"
+}
+maclab-109:Rizzo-Paul benko005$ export
+declare -x HOME="/Users/benko005"
+declare -x LANG="en_US.UTF-8"
+declare -x LOGNAME="benko005"
+declare -x LaunchInstanceID="6F975794-5C19-4967-B05F-57F6FDD401AE"
+declare -x OLDPWD="/Users/benko005"
+declare -x PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+declare -x PWD="/Users/benko005/PycharmProjects/Rizzo-Paul"
+declare -x SECURITYSESSIONID="18705"
+declare -x SHELL="/bin/bash"
+declare -x SHLVL="1"
+declare -x SSH_AUTH_SOCK="/private/tmp/com.apple.launchd.JrWPSUt2yT/Listeners"
+declare -x TERM="xterm-256color"
+declare -x TERM_PROGRAM="Apple_Terminal"
+declare -x TERM_PROGRAM_VERSION="433"
+declare -x TERM_SESSION_ID="3FF5A0BE-4EC4-4348-8A55-547FDDF03D3F"
+declare -x TMPDIR="/var/folders/23/0dkn620d5zb1r6k41srnb3dm8c1p_m/T/"
+declare -x USER="benko005"
+declare -x XPC_FLAGS="0x0"
+declare -x XPC_SERVICE_NAME="0"
+maclab-109:Rizzo-Paul benko005$ alias
+maclab-109:Rizzo-Paul benko005$ printenv | less
+maclab-109:Rizzo-Paul benko005$ printenv USER
+benko005
+maclab-109:Rizzo-Paul benko005$ set | less
+maclab-109:Rizzo-Paul benko005$ echo $HOME
+/Users/benko005
+maclab-109:Rizzo-Paul benko005$ HOME
+-bash: HOME: command not found
+maclab-109:Rizzo-Paul benko005$ $HOME
+-bash: /Users/benko005: is a directory
+maclab-109:Rizzo-Paul benko005$ nano some_file
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt		Redirection2.txt
+ExploringTheSystem.txt			SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt			WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt	WorkingWithCommands.txt
+Processes.txt				foo.xt
+README.md				some_file
+Redirection.txt
+maclab-109:Rizzo-Paul benko005$ cp some_file some_file.bak
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt		Redirection2.txt
+ExploringTheSystem.txt			SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt			WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt	WorkingWithCommands.txt
+Processes.txt				foo.xt
+README.md				some_file
+Redirection.txt				some_file.bak
+maclab-109:Rizzo-Paul benko005$ nano .bashrc
+maclab-109:Rizzo-Paul benko005$ ~/.bash_profile
+-bash: /Users/benko005/.bash_profile: No such file or directory
+maclab-109:Rizzo-Paul benko005$ ~/.bash_benko005
+-bash: /Users/benko005/.bash_benko005: No such file or directory
+maclab-109:Rizzo-Paul benko005$ ~/.benko005
+-bash: /Users/benko005/.benko005: No such file or directory
+maclab-109:Rizzo-Paul benko005$ ~/benko005
+-bash: /Users/benko005/benko005: No such file or directory
+maclab-109:Rizzo-Paul benko005$ export CLICOLOR=1
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt          Redirection2.txt
+ExploringTheSystem.txt              SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt              WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt WorkingWithCommands.txt
+Processes.txt                       foo.xt
+README.md                           some_file
+Redirection.txt                     some_file.bak
+maclab-109:Rizzo-Paul benko005$ export lsCOLOR=1
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt          Redirection2.txt
+ExploringTheSystem.txt              SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt              WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt WorkingWithCommands.txt
+Processes.txt                       foo.xt
+README.md                           some_file
+Redirection.txt                     some_file.bak
+maclab-109:Rizzo-Paul benko005$ export lSCOLOR=1
+maclab-109:Rizzo-Paul benko005$ export lSCOLORS=1
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt          Redirection2.txt
+ExploringTheSystem.txt              SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt              WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt WorkingWithCommands.txt
+Processes.txt                       foo.xt
+README.md                           some_file
+Redirection.txt                     some_file.bak
+maclab-109:Rizzo-Paul benko005$ export lSCOLORS=2
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt          Redirection2.txt
+ExploringTheSystem.txt              SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt              WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt WorkingWithCommands.txt
+Processes.txt                       foo.xt
+README.md                           some_file
+Redirection.txt                     some_file.bak
+maclab-109:Rizzo-Paul benko005$ alias ls='ls -G'
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt          Redirection2.txt
+ExploringTheSystem.txt              SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt              WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt WorkingWithCommands.txt
+Processes.txt                       foo.xt
+README.md                           some_file
+Redirection.txt                     some_file.bak
+maclab-109:Rizzo-Paul benko005$ nano .bashrc
+maclab-109:Rizzo-Paul benko005$ info ls
+maclab-109:Rizzo-Paul benko005$ export lSCOLORS=b
+maclab-109:Rizzo-Paul benko005$ lSCOLORS=b
+maclab-109:Rizzo-Paul benko005$ ls lSCOLORS=b
+ls: lSCOLORS=b: No such file or directory
+maclab-109:Rizzo-Paul benko005$ nano .bashrc
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt          Redirection2.txt
+ExploringTheSystem.txt              SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt              WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt WorkingWithCommands.txt
+Processes.txt                       foo.xt
+README.md                           some_file
+Redirection.txt                     some_file.bak
+maclab-109:Rizzo-Paul benko005$ nano .bashrc
+maclab-109:Rizzo-Paul benko005$ source .bashrc
+-bash: Paul: command not found
+maclab-109:Rizzo-Paul benko005$ ll
+ls: illegal option -- -
+usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
+maclab-109:Rizzo-Paul benko005$ l
+-bash: l: command not found
+maclab-109:Rizzo-Paul benko005$ nano .bashrc
+maclab-109:Rizzo-Paul benko005$ l.
+ls: --color=auto: No such file or directory
+.
+maclab-109:Rizzo-Paul benko005$ ~/.bashrc
+-bash: /Users/benko005/.bashrc: No such file or directory
+maclab-109:Rizzo-Paul benko005$ ls
+AdvancedKeyboardTricks.txt          Redirection2.txt
+ExploringTheSystem.txt              SeeingTheWorldAsTheShellSeeIt.txt
+ExporingTheSystem2.txt              WhatIsTheShell_Gamma.txt
+ManipulatingFilesAndDirectories.txt WorkingWithCommands.txt
+Processes.txt                       foo.xt
+README.md                           some_file
+Redirection.txt                     some_file.bak
+maclab-109:Rizzo-Paul benko005$ 
