@@ -1,0 +1,947 @@
+Last login: Mon Feb 24 16:29:02 on ttys001
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13320 ttys000    0:00.01 -bash
+maclab-63:~ benko005$ top
+maclab-63:~ benko005$ jobs
+maclab-63:~ benko005$ bg
+-bash: bg: current: no such job
+maclab-63:~ benko005$ fg
+-bash: fg: current: no such job
+maclab-63:~ benko005$ kill
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+maclab-63:~ benko005$ killall
+usage: killall [-delmsvz] [-help]
+               [-u user] [-t tty] [-c cmd] [-SIGNAL] [cmd]...
+At least one option or argument to specify processes must be given.
+maclab-63:~ benko005$ shutdonw
+-bash: shutdonw: command not found
+maclab-63:~ benko005$ shutdown
+shutdown: NOT super-user
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13320 ttys000    0:00.02 -bash
+maclab-63:~ benko005$ ps x
+  PID   TT  STAT      TIME COMMAND
+ 9079   ??  S      0:03.94 /usr/sbin/cfprefsd agent
+ 9093   ??  S      0:02.44 /usr/libexec/UserEventAgent (Aqua)
+ 9098   ??  S      0:06.26 /usr/sbin/distnoted agent
+ 9102   ??  S      0:11.14 /usr/libexec/lsd
+ 9105   ??  S      0:04.00 /System/Library/Frameworks/CoreTelephony.framework/
+ 9112   ??  S      0:07.20 /usr/libexec/trustd --agent
+ 9133   ??  S      0:00.19 /usr/libexec/secd
+ 9147   ??  S      0:02.23 /System/Library/PrivateFrameworks/CloudKitDaemon.fr
+ 9150   ??  S      0:00.40 /System/Library/PrivateFrameworks/TelephonyUtilitie
+ 9151   ??  S      0:00.04 /System/Library/Frameworks/Security.framework/Versi
+ 9152   ??  S      0:00.39 /System/Library/Frameworks/Accounts.framework/Versi
+ 9154   ??  S      0:00.36 /System/Library/PrivateFrameworks/TCC.framework/Res
+ 9155   ??  S      0:01.68 /usr/libexec/nsurlsessiond
+ 9157   ??  S      0:00.64 /System/Library/PrivateFrameworks/IDS.framework/ide
+ 9162   ??  S      0:00.32 /usr/libexec/languageassetd --firstLogin
+ 9166   ??  S      0:00.27 /System/Library/PrivateFrameworks/IMCore.framework/
+ 9167   ??  S      0:04.27 /usr/libexec/secinitd
+ 9168   ??  S      0:00.78 /System/Library/PrivateFrameworks/PassKitCore.frame
+ 9172   ??  S      0:00.13 /System/Library/PrivateFrameworks/IMDPersistence.fr
+ 9173   ??  S      0:00.11 /System/Library/Frameworks/AddressBook.framework/Ex
+ 9176   ??  S      0:00.65 /usr/libexec/routined LAUNCHED_BY_LAUNCHD
+ 9177   ??  S      0:00.49 /usr/sbin/usernoted
+ 9178   ??  S      0:00.06 /usr/libexec/rapportd
+ 9179   ??  S      0:00.64 /System/Library/PrivateFrameworks/CalendarAgent.fra
+ 9180   ??  S      0:00.06 /usr/libexec/networkserviceproxy
+ 9181   ??  S      0:00.40 /System/Library/CoreServices/WiFiAgent.app/Contents
+ 9182   ??  S      0:02.22 /System/Library/CoreServices/SafariSupport.bundle/C
+ 9183   ??  S      0:00.05 /System/Library/PrivateFrameworks/PhotoAnalysis.fra
+ 9184   ??  S      0:00.02 /System/Library/PrivateFrameworks/CoreFollowUp.fram
+ 9187   ??  S      0:00.04 /System/Library/PrivateFrameworks/AskPermission.fra
+ 9189   ??  S      0:02.29 /System/Library/CoreServices/NotificationCenter.app
+ 9190   ??  S      0:00.19 /System/Library/PrivateFrameworks/ProtectedCloudSto
+ 9192   ??  S      0:01.99 /usr/libexec/nsurlstoraged
+ 9194   ??  S      0:01.17 /System/Library/PrivateFrameworks/GeoServices.frame
+ 9195   ??  S      0:00.21 /System/Library/Frameworks/CoreServices.framework/V
+ 9196   ??  S      0:00.55 /System/Library/PrivateFrameworks/ContactsAgent.fra
+ 9197   ??  S      0:00.57 /System/Library/PrivateFrameworks/AssistantServices
+ 9200   ??  S      0:00.67 /System/Library/PrivateFrameworks/AuthKit.framework
+ 9202   ??  S      0:03.82 /System/Library/PrivateFrameworks/CommerceKit.frame
+ 9205   ??  Ss     0:00.35 /System/Library/PrivateFrameworks/CalendarNotificat
+ 9207   ??  S      0:00.05 /System/Library/Frameworks/LocalAuthentication.fram
+ 9208   ??  S      0:00.02 /System/Library/PrivateFrameworks/CoreCDP.framework
+ 9214   ??  Ss     0:00.15 /System/Library/PrivateFrameworks/IMFoundation.fram
+ 9215   ??  S      0:01.76 /usr/libexec/sharingd
+ 9220   ??  S      0:00.26 /System/Library/PrivateFrameworks/MessagesKit.frame
+ 9221   ??  S      0:00.46 /System/Library/PrivateFrameworks/UserActivity.fram
+ 9224   ??  S      0:03.14 /System/Library/CoreServices/sharedfilelistd
+ 9225   ??  S      0:00.02 /System/Library/PrivateFrameworks/MediaRemote.frame
+ 9227   ??  S      0:00.08 /System/Library/PrivateFrameworks/CallHistory.frame
+ 9229   ??  Ss     0:00.01 /System/Library/PrivateFrameworks/IMFoundation.fram
+ 9230   ??  S      0:00.12 /usr/libexec/fmfd
+ 9233   ??  S      0:00.56 /System/Library/CoreServices/CoreLocationAgent.app/
+ 9234   ??  Ss     0:00.14 /System/Library/PrivateFrameworks/IMFoundation.fram
+ 9286   ??  S      0:00.11 /System/Library/CoreServices/pbs
+ 9287   ??  S      0:00.11 /usr/libexec/swcd
+ 9288   ??  S      0:00.08 /System/Library/PrivateFrameworks/CloudDocsDaemon.f
+ 9290   ??  S      0:01.01 /usr/libexec/pboard
+ 9291   ??  S      0:00.49 /System/Library/CoreServices/talagent
+ 9292   ??  S      0:02.16 /System/Library/Frameworks/ApplicationServices.fram
+ 9301   ??  S      0:00.18 /System/Library/PrivateFrameworks/CacheDelete.frame
+ 9304   ??  S      0:03.42 /usr/libexec/pkd
+ 9337   ??  S      0:00.62 /System/Library/CoreServices/diagnostics_agent
+ 9338   ??  S      0:00.68 /System/Library/CoreServices/cloudphotosd.app/Conte
+ 9339   ??  S      0:00.07 /System/Library/PrivateFrameworks/CommerceKit.frame
+ 9340   ??  S      0:00.04 /System/Library/PrivateFrameworks/QuickLookThumbnai
+ 9358   ??  S      0:00.26 /System/Library/PrivateFrameworks/CommerceKit.frame
+ 9359   ??  Ss     0:00.06 /System/Library/Frameworks/Metal.framework/Versions
+ 9384   ??  S      0:01.88 /System/Library/CoreServices/iconservicesagent
+ 9390   ??  S      0:00.44 /System/Library/PrivateFrameworks/CloudPhotoService
+ 9391   ??  Ss     0:00.60 /System/Library/Frameworks/MediaLibrary.framework/V
+ 9392   ??  S      0:00.17 /System/Library/PrivateFrameworks/PhotoLibraryPriva
+ 9399   ??  S      0:00.07 /usr/libexec/siriknowledged
+ 9400   ??  S      0:00.03 /System/Library/PrivateFrameworks/CloudServices.fra
+ 9412   ??  S      0:08.06 /System/Library/CoreServices/Dock.app/Contents/MacO
+ 9413   ??  S      0:02.55 /System/Library/CoreServices/SystemUIServer.app/Con
+ 9414   ??  S      0:30.27 /System/Library/CoreServices/Finder.app/Contents/Ma
+ 9421   ??  S      0:00.18 /System/Library/PrivateFrameworks/FileProvider.fram
+ 9422   ??  S      0:00.04 /System/Library/PrivateFrameworks/CoreSpeech.framew
+ 9425   ??  S      0:00.56 /usr/sbin/ckkeyrolld
+ 9428   ??  S      0:00.05 /System/Library/CoreServices/SocialPushAgent.app/Co
+ 9430   ??  SN     0:00.86 /usr/local/jamf/bin/jamfAgent
+ 9431   ??  S      0:00.05 /usr/libexec/dmd
+ 9432   ??  S      0:00.47 /System/Library/Frameworks/InputMethodKit.framework
+ 9433   ??  S      0:01.36 /System/Library/CoreServices/Siri.app/Contents/MacO
+ 9434   ??  S      0:00.28 /System/Library/Image Capture/Support/icdd
+ 9436   ??  S      0:00.41 /Library/Application Support/Pharos/Notify.app/Cont
+ 9437   ??  S      0:00.39 /System/Library/CoreServices/AirPlayUIAgent.app/Con
+ 9438   ??  S      0:00.31 /usr/libexec/knowledge-agent
+ 9439   ??  S      0:00.21 /System/Library/CoreServices/cloudpaird
+ 9440   ??  S      0:48.26 /Applications/Utilities/Adobe Creative Cloud/ACC/Cr
+ 9441   ??  S      0:00.39 /System/Library/PrivateFrameworks/Noticeboard.frame
+ 9444   ??  S      0:00.12 /System/Library/CoreServices/backgroundtaskmanageme
+ 9445   ??  S      0:00.04 /System/Library/Frameworks/CryptoTokenKit.framework
+ 9447   ??  S      0:00.03 /System/Library/Frameworks/CryptoTokenKit.framework
+ 9448   ??  Ss     0:00.16 /System/Library/Frameworks/Metal.framework/Versions
+ 9450   ??  S      0:04.75 /System/Library/CoreServices/Spotlight.app/Contents
+ 9451   ??  S      0:00.04 /System/Library/PrivateFrameworks/PrintingPrivate.f
+ 9453   ??  Ss     0:00.05 /System/Library/Frameworks/Metal.framework/Versions
+ 9455   ??  S      0:02.21 /System/Library/PrivateFrameworks/CoreParsec.framew
+ 9456   ??  Ss     0:00.17 /System/Library/PrivateFrameworks/CoreWLANKit.frame
+ 9457   ??  Ss     0:00.08 /System/Library/Frameworks/Metal.framework/Versions
+ 9458   ??  S      0:00.01 SafeEjectGPUAgent
+ 9459   ??  S      0:00.03 /System/Library/CoreServices/Menu Extras/SafeEjectG
+ 9462   ??  S      0:04.63 /Library/Application Support/Adobe/Adobe Desktop Co
+ 9463   ??  Ss     0:00.68 /System/Library/CoreServices/Dock.app/Contents/XPCS
+ 9467   ??  S      0:00.03 /System/Library/CoreServices/Software Update.app/Co
+ 9470   ??  S      0:00.05 /System/Library/PrivateFrameworks/CommerceKit.frame
+ 9471   ??  S      0:00.04 /System/Library/PrivateFrameworks/CallHistory.frame
+ 9472   ??  S      1:16.11 /Applications/Utilities/Adobe Creative Cloud/ACC/Cr
+ 9474   ??  S      0:00.06 /usr/libexec/videosubscriptionsd
+ 9476   ??  S      0:12.05 /Library/Application Support/Adobe/Adobe Desktop Co
+ 9478   ??  S      0:13.29 /Applications/Utilities/Adobe Creative Cloud/ACC/Cr
+ 9479   ??  S      0:00.95 /Applications/Utilities/Adobe Creative Cloud/ACC/Cr
+ 9480   ??  Ss     0:00.05 /System/Library/Frameworks/VideoToolbox.framework/V
+ 9487   ??  S      0:13.29 /Library/Application Support/Adobe/Adobe Desktop Co
+ 9489   ??  S      0:01.85 /Library/Application Support/Adobe/Creative Cloud L
+ 9490   ??  S      0:00.58 /System/Library/PrivateFrameworks/CommerceKit.frame
+ 9496   ??  S      0:00.25 /System/Library/Frameworks/ColorSync.framework/Supp
+ 9499   ??  S      1:37.05 /Applications/Utilities/Adobe Creative Cloud/ACC/Cr
+ 9502   ??  S      0:14.16 /Applications/Utilities/Adobe Creative Cloud Experi
+ 9503   ??  S      0:02.18 /Applications/Utilities/Adobe Sync/CoreSync/Core Sy
+ 9504   ??  S      0:15.88 /Applications/Utilities/Adobe Sync/CoreSync/Core Sy
+ 9509   ??  Ss     0:00.78 /Applications/Utilities/Adobe Sync/CoreSync/Core Sy
+ 9510   ??  S      0:00.38 /System/Library/PrivateFrameworks/CommerceKit.frame
+ 9522   ??  S      0:00.79 /System/Library/PrivateFrameworks/MobileDevice.fram
+ 9523   ??  S      0:00.12 /usr/libexec/USBAgent
+ 9529   ??  Ss     0:01.57 /System/Library/CoreServices/Siri.app/Contents/XPCS
+ 9631   ??  S      0:00.61 /System/Library/PrivateFrameworks/CoreSuggestions.f
+ 9741   ??  S      0:01.65 /System/Library/Services/AppleSpell.service/Content
+ 9742   ??  S      0:00.12 /usr/libexec/keyboardservicesd
+ 9745   ??  S      0:00.18 /System/Library/StagedFrameworks/Safari/SafariShare
+ 9832   ??  S      0:00.27 /System/Library/Frameworks/CoreServices.framework/F
+ 9834   ??  S      0:00.03 /usr/libexec/silhouette
+ 9835   ??  S      0:00.08 /System/Library/PrivateFrameworks/NotesShared.frame
+ 9920   ??  S      0:08.41 /System/Library/PrivateFrameworks/SafariSafeBrowsin
+ 9927   ??  S      0:00.12 /System/Library/PrivateFrameworks/ContextKit.framew
+ 9946   ??  S      0:00.11 /System/Library/Frameworks/AudioToolbox.framework/A
+10018   ??  S      0:00.03 /System/Library/Frameworks/CoreServices.framework/F
+10025   ??  Ss     0:44.70 /System/Library/PrivateFrameworks/DiskImages.framew
+10050   ??  S      1:06.46 /Volumes/Google Chrome/Google Chrome.app/Contents/M
+10057   ??  S      0:00.02 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+10178   ??  S      0:00.02 /System/Library/PrivateFrameworks/KerberosHelper/He
+10181   ??  Ss     0:00.05 /System/Library/Frameworks/Metal.framework/Versions
+10183   ??  Ss     0:00.09 /System/Library/Frameworks/Metal.framework/Versions
+10196   ??  S      1:12.67 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+10198   ??  S      0:18.36 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+10201   ??  S      0:02.24 /System/Library/Frameworks/CoreServices.framework/F
+10202   ??  Ss     0:00.06 /System/Library/Frameworks/VideoToolbox.framework/V
+10203   ??  Ss     0:00.02 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+10277   ??  Ss     0:00.05 /System/Library/Frameworks/Metal.framework/Versions
+10290   ??  S      0:19.39 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+10294   ??  Ss     0:00.97 /System/Library/PrivateFrameworks/CommerceKit.frame
+10310   ??  S      0:00.98 /System/Library/PrivateFrameworks/ViewBridge.framew
+10438   ??  S      0:00.03 /System/Library/Frameworks/ApplicationServices.fram
+10533   ??  S      0:00.02 /System/Library/PrivateFrameworks/DistributedEvalua
+10563   ??  S      0:00.90 /System/Library/CoreServices/CoreServicesUIAgent.ap
+10564   ??  S      0:00.10 /System/Library/CoreServices/ScopedBookmarkAgent
+11132   ??  Ss     0:00.04 /System/Library/PrivateFrameworks/CommerceKit.frame
+11242   ??  S      0:00.81 /System/Library/Frameworks/CoreServices.framework/F
+11382   ??  S      0:00.11 /System/Library/CoreServices/mapspushd
+11488   ??  S      0:00.97 /System/Library/Frameworks/CoreServices.framework/F
+11555   ??  S      0:00.29 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+11566   ??  S      0:21.70 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+11584   ??  S      0:02.05 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+11737   ??  S      0:00.95 /System/Library/Frameworks/CoreServices.framework/F
+12083   ??  S      0:00.04 /System/Library/Frameworks/Security.framework/Versi
+12298   ??  S      0:03.55 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+12344   ??  S      0:30.20 /Applications/Utilities/Terminal.app/Contents/MacOS
+13135   ??  S      0:00.25 /System/Library/Frameworks/ApplicationServices.fram
+13136   ??  S      0:00.68 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+13137   ??  S      0:00.39 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+13154   ??  Ss     0:03.65 /System/Library/PrivateFrameworks/XprotectFramework
+13156   ??  Ss     0:35.37 /System/Library/PrivateFrameworks/DiskImages.framew
+13220   ??  Ss     0:00.25 /System/Library/Frameworks/Foundation.framework/Ver
+13221   ??  Ss     0:00.05 /System/Library/Frameworks/Metal.framework/Versions
+13222   ??  S      0:01.63 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+13224   ??  S      0:00.07 /Volumes/Google Chrome/Google Chrome.app/Contents/F
+13319 s000  Ss     0:00.02 login -pf benko005
+13320 s000  S      0:00.03 -bash
+13335 s000  R+     0:00.00 ps x
+maclab-63:~ benko005$ ps aux
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+benko005         12344   1.2  1.5  4540364 124788   ??  R     2:40PM   0:30.25 /Applications/Ut
+_windowserver      216   0.9  1.5  7223320 125244   ??  Ss   Wed08AM   6:56.78 /System/Library/
+benko005         11566   0.7  2.2  8935488 182708   ??  S     1:09PM   0:22.07 /Volumes/Google 
+benko005         10196   0.4  1.9  4905612 158256   ??  S    10:21AM   1:12.81 /Volumes/Google 
+_hidd              139   0.1  0.1  4307828   6412   ??  Ss   Wed08AM   0:59.82 /usr/libexec/hid
+benko005          9433   0.1  0.2  4341016  19684   ??  S     9:39AM   0:01.36 /System/Library/
+gier0001          1226   0.1  0.1  4331716   6940   ??  S    Wed11AM   0:30.93 /Applications/Ut
+benko005         13220   0.0  0.5  4460008  40004   ??  Ss    4:23PM   0:00.25 /System/Library/
+gier0001         13218   0.0  0.2  4315684  12652   ??  S     4:22PM   0:00.04 /System/Library/
+gier0001         13217   0.0  0.3  4317236  22900   ??  S     4:22PM   0:00.06 /System/Library/
+gier0001         13216   0.0  0.2  4315684  12676   ??  S     4:22PM   0:00.04 /System/Library/
+benko005         13156   0.0  0.2  4347588  20000   ??  Ss    4:11PM   0:35.37 /System/Library/
+benko005         13154   0.0  0.3  4343300  27744   ??  Ss    4:11PM   0:03.65 /System/Library/
+benko005         13137   0.0  0.9  8833844  73488   ??  S     4:09PM   0:00.39 /Volumes/Google 
+benko005         13136   0.0  0.9  8840056  79212   ??  S     4:08PM   0:00.68 /Volumes/Google 
+benko005         13135   0.0  0.3  4343408  26108   ??  S     4:08PM   0:00.25 /System/Library/
+gier0001         13115   0.0  0.3  4344452  22052   ??  S     4:06PM   0:00.08 /System/Library/
+gille029         13037   0.0  0.1  4334848   6972   ??  S     4:02PM   0:00.12 /usr/libexec/tru
+bentl005         13036   0.0  0.1  4335084   7636   ??  S     4:02PM   0:00.13 /usr/libexec/tru
+_spotlight       12613   0.0  0.2  4313116  15936   ??  S     3:20PM   0:00.06 /System/Library/
+benko005         12298   0.0  1.8  9031004 154760   ??  S     2:34PM   0:03.55 /Volumes/Google 
+_spotlight       12156   0.0  0.2  4313116  15764   ??  S     2:16PM   0:00.08 /System/Library/
+benko005         12083   0.0  0.1  4304572   8960   ??  S     2:16PM   0:00.04 /System/Library/
+benko005         11737   0.0  0.6  4357292  46804   ??  S     1:26PM   0:00.95 /System/Library/
+benko005         11584   0.0  0.7  8778768  56956   ??  S     1:09PM   0:02.08 /Volumes/Google 
+benko005         11555   0.0  0.6  8818980  49040   ??  S     1:09PM   0:00.29 /Volumes/Google 
+root             11521   0.0  0.2  4337376  16160   ??  Ss    1:05PM   0:00.06 /System/Library/
+benko005         11488   0.0  0.4  4364288  35924   ??  S    12:53PM   0:00.97 /System/Library/
+benko005         11382   0.0  0.1  4342824  11272   ??  S    12:44PM   0:00.11 /System/Library/
+gier0001         11252   0.0  0.1  4365636   6600   ??  S    12:24PM   0:00.38 /System/Library/
+benko005         11242   0.0  0.4  4370412  35140   ??  S    12:22PM   0:00.81 /System/Library/
+benko005         11132   0.0  0.1  4334872   9164   ??  Ss   12:09PM   0:00.04 /System/Library/
+gier0001         10665   0.0  0.2  4372100  19196   ??  S    11:08AM   0:00.57 /System/Library/
+benko005         10564   0.0  0.1  4331920   5292   ??  S    10:58AM   0:00.10 /System/Library/
+benko005         10563   0.0  0.4  4380216  35912   ??  S    10:58AM   0:00.90 /System/Library/
+benko005         10533   0.0  0.0  4305008   3428   ??  S    10:47AM   0:00.02 /System/Library/
+benko005         10438   0.0  0.1  4305524   4224   ??  S    10:36AM   0:00.03 /System/Library/
+benko005         10310   0.0  0.1  4331672   8960   ??  S    10:27AM   0:00.99 /System/Library/
+root             10308   0.0  0.2  4345680  18844   ??  Ss   10:27AM   0:00.31 /System/Library/
+benko005         10294   0.0  0.2  4376940  17340   ??  Ss   10:27AM   0:00.97 /System/Library/
+benko005         10290   0.0  2.3  8904052 191156   ??  S    10:26AM   0:19.40 /Volumes/Google 
+benko005         10277   0.0  0.0  4306208   2572   ??  Ss   10:23AM   0:00.05 /System/Library/
+benko005         10203   0.0  0.1  4305220   7248   ??  Ss   10:21AM   0:00.02 /Volumes/Google 
+benko005         10202   0.0  0.1  4343512   5716   ??  Ss   10:21AM   0:00.06 /System/Library/
+benko005         10201   0.0  0.4  4367244  34528   ??  S    10:21AM   0:02.24 /System/Library/
+benko005         10198   0.0  0.4  4583456  34604   ??  S    10:21AM   0:18.36 /Volumes/Google 
+benko005         10183   0.0  0.1  4368096   7820   ??  Ss   10:21AM   0:00.09 /System/Library/
+benko005         10181   0.0  0.0  4333808   3712   ??  Ss   10:20AM   0:00.05 /System/Library/
+benko005         10178   0.0  0.0  4304992   3852   ??  S    10:20AM   0:00.02 /System/Library/
+benko005         10057   0.0  0.1  4308324   7152   ??  S    10:19AM   0:00.02 /Volumes/Google 
+benko005         10050   0.0  2.0  4927784 165464   ??  S    10:18AM   1:06.52 /Volumes/Google 
+benko005         10025   0.0  0.3  4354680  24812   ??  Ss   10:17AM   0:44.70 /System/Library/
+root             10023   0.0  0.0  4304760   3984   ??  Ss   10:17AM   0:00.04 /System/Library/
+benko005         10018   0.0  0.1  4305084   4292   ??  S    10:16AM   0:00.03 /System/Library/
+benko005          9946   0.0  0.1  4332524   5172   ??  S    10:14AM   0:00.11 /System/Library/
+gier0001          9932   0.0  0.1  4344444  11000   ??  S    10:09AM   0:00.36 /System/Library/
+benko005          9927   0.0  0.1  4382540  11132   ??  S    10:08AM   0:00.12 /System/Library/
+benko005          9920   0.0  0.3  4410824  22384   ??  S    10:07AM   0:08.41 /System/Library/
+gier0001          9898   0.0  0.1  4337380   5908   ??  Ss   10:05AM   0:00.06 /System/Library/
+gier0001          9896   0.0  0.2  4401720  17644   ??  S    10:05AM   0:00.50 /System/Library/
+benko005          9835   0.0  0.1  4331136   5728   ??  S    10:02AM   0:00.08 /System/Library/
+benko005          9834   0.0  0.1  4305636   5080   ??  S    10:02AM   0:00.03 /usr/libexec/sil
+benko005          9832   0.0  0.3  4562800  24552   ??  S    10:02AM   0:00.27 /System/Library/
+benko005          9745   0.0  0.3  4420636  21596   ??  S    10:00AM   0:00.18 /System/Library/
+benko005          9742   0.0  0.1  4335700  10628   ??  S     9:59AM   0:00.12 /usr/libexec/key
+benko005          9741   0.0  0.6  4610264  49892   ??  S     9:59AM   0:01.65 /System/Library/
+benko005          9631   0.0  0.4  4443836  30312   ??  S     9:46AM   0:00.61 /System/Library/
+benko005          9529   0.0  0.3  4345884  22788   ??  Ss    9:41AM   0:01.57 /System/Library/
+benko005          9523   0.0  0.1  4332312   6588   ??  S     9:41AM   0:00.12 /usr/libexec/USB
+benko005          9522   0.0  0.2  4343792  14264   ??  S     9:41AM   0:00.79 /System/Library/
+gier0001          9521   0.0  0.1  4342132  11968   ??  S     9:41AM   0:00.37 /System/Library/
+benko005          9510   0.0  0.2  4340948  16604   ??  S     9:40AM   0:00.38 /System/Library/
+benko005          9509   0.0  0.1  4362584  11740   ??  Ss    9:40AM   0:00.78 /Applications/Ut
+benko005          9504   0.0  0.1  4331716   8680   ??  S     9:40AM   0:15.88 /Applications/Ut
+benko005          9503   0.0  0.3  4430968  21136   ??  S     9:40AM   0:02.18 /Applications/Ut
+benko005          9502   0.0  0.5  4999648  45108   ??  S     9:40AM   0:14.16 /Applications/Ut
+benko005          9499   0.0  1.1  4856180  94776   ??  S     9:40AM   1:37.08 /Applications/Ut
+benko005          9496   0.0  0.1  4334664   8124   ??  S     9:40AM   0:00.25 /System/Library/
+benko005          9490   0.0  0.2  4373444  12760   ??  S     9:40AM   0:00.58 /System/Library/
+benko005          9489   0.0  0.6  5011192  47800   ??  S     9:40AM   0:01.85 /Library/Applica
+benko005          9487   0.0  0.1  4331716   8668   ??  S     9:40AM   0:13.29 /Library/Applica
+benko005          9480   0.0  0.0  4333800   3356   ??  Ss    9:40AM   0:00.05 /System/Library/
+benko005          9479   0.0  0.7  4772488  56820   ??  S     9:40AM   0:00.95 /Applications/Ut
+benko005          9478   0.0  0.1  4331716   8692   ??  S     9:40AM   0:13.30 /Applications/Ut
+benko005          9476   0.0  1.3  5676208 111272   ??  S     9:40AM   0:12.06 /Library/Applica
+benko005          9474   0.0  0.0  4332408   3280   ??  S     9:40AM   0:00.06 /usr/libexec/vid
+benko005          9472   0.0  0.4  4687168  35388   ??  S     9:40AM   1:16.14 /Applications/Ut
+benko005          9471   0.0  0.2  4331244  12804   ??  S     9:40AM   0:00.04 /System/Library/
+benko005          9470   0.0  0.1  4332392  10868   ??  S     9:40AM   0:00.05 /System/Library/
+benko005          9467   0.0  0.1  4305640   7548   ??  S     9:40AM   0:00.03 /System/Library/
+benko005          9463   0.0  0.3  4352568  21684   ??  Ss    9:40AM   0:00.68 /System/Library/
+benko005          9462   0.0  0.1  4344768  11996   ??  S     9:40AM   0:04.63 /Library/Applica
+benko005          9459   0.0  0.1  4333180   6676   ??  S     9:40AM   0:00.03 /System/Library/
+benko005          9458   0.0  0.1  4296896   5468   ??  S     9:40AM   0:00.01 SafeEjectGPUAgen
+benko005          9457   0.0  0.1  4366052   6576   ??  Ss    9:40AM   0:00.08 /System/Library/
+benko005          9456   0.0  0.1  4330884   9604   ??  Ss    9:40AM   0:00.17 /System/Library/
+benko005          9455   0.0  0.3  4381568  23300   ??  S     9:40AM   0:02.21 /System/Library/
+benko005          9453   0.0  0.0  4339952   3012   ??  Ss    9:40AM   0:00.05 /System/Library/
+benko005          9451   0.0  0.1  4305364  12416   ??  S     9:40AM   0:00.04 /System/Library/
+benko005          9450   0.0  0.9  4583008  75736   ??  S     9:40AM   0:04.75 /System/Library/
+benko005          9448   0.0  0.2  4370148  18224   ??  Ss    9:40AM   0:00.16 /System/Library/
+benko005          9447   0.0  0.1  4306216   6616   ??  S     9:40AM   0:00.03 /System/Library/
+benko005          9445   0.0  0.1  4305748   6732   ??  S     9:39AM   0:00.04 /System/Library/
+benko005          9444   0.0  0.1  4331312   4720   ??  S     9:39AM   0:00.12 /System/Library/
+benko005          9441   0.0  0.2  4340960  15240   ??  S     9:39AM   0:00.39 /System/Library/
+benko005          9440   0.0  0.6  4710152  47800   ??  S     9:39AM   0:48.28 /Applications/Ut
+benko005          9439   0.0  0.2  4331988  14168   ??  S     9:39AM   0:00.21 /System/Library/
+benko005          9438   0.0  0.1  4336928  12572   ??  S     9:39AM   0:00.31 /usr/libexec/kno
+benko005          9437   0.0  0.1  4348004  12200   ??  S     9:39AM   0:00.39 /System/Library/
+benko005          9436   0.0  0.2  4358176  13368   ??  S     9:39AM   0:00.41 /Library/Applica
+benko005          9434   0.0  0.1  4333036  11656   ??  S     9:39AM   0:00.28 /System/Library/
+benko005          9432   0.0  0.1  4333760   9332   ??  S     9:39AM   0:00.47 /System/Library/
+benko005          9431   0.0  0.1  4331104   8380   ??  S     9:39AM   0:00.05 /usr/libexec/dmd
+benko005          9430   0.0  0.1  4331820   8572   ??  SN    9:39AM   0:00.86 /usr/local/jamf/
+benko005          9428   0.0  0.1  4330712   8040   ??  S     9:39AM   0:00.05 /System/Library/
+benko005          9425   0.0  0.1  4362524  10556   ??  S     9:39AM   0:00.56 /usr/sbin/ckkeyr
+benko005          9422   0.0  0.2  4304500  14152   ??  S     9:39AM   0:00.04 /System/Library/
+benko005          9421   0.0  0.1  4331640   7456   ??  S     9:39AM   0:00.18 /System/Library/
+benko005          9414   0.0  1.5  4653584 123196   ??  S     9:39AM   0:30.27 /System/Library/
+benko005          9413   0.0  0.4  4398304  34284   ??  S     9:39AM   0:02.55 /System/Library/
+benko005          9412   0.0  0.9  4477708  71644   ??  S     9:39AM   0:08.06 /System/Library/
+benko005          9400   0.0  0.1  4304904   8336   ??  S     9:39AM   0:00.03 /System/Library/
+benko005          9399   0.0  0.2  4331456  14472   ??  S     9:39AM   0:00.07 /usr/libexec/sir
+benko005          9392   0.0  0.1  4336736  10304   ??  S     9:39AM   0:00.17 /System/Library/
+benko005          9391   0.0  0.3  4381060  21580   ??  Ss    9:39AM   0:00.60 /System/Library/
+benko005          9390   0.0  0.2  4330764  16968   ??  S     9:39AM   0:00.44 /System/Library/
+benko005          9384   0.0  0.3  4499508  22836   ??  S     9:39AM   0:01.88 /System/Library/
+benko005          9359   0.0  0.1  4335332   4276   ??  Ss    9:39AM   0:00.06 /System/Library/
+benko005          9358   0.0  0.1  4306216  11740   ??  S     9:39AM   0:00.26 /System/Library/
+benko005          9340   0.0  0.1  4330808   6472   ??  S     9:39AM   0:00.04 /System/Library/
+benko005          9339   0.0  0.1  4334084  10236   ??  S     9:39AM   0:00.07 /System/Library/
+benko005          9338   0.0  0.3  4369552  22456   ??  S     9:39AM   0:00.68 /System/Library/
+benko005          9337   0.0  0.1  4332516  11976   ??  S     9:39AM   0:00.62 /System/Library/
+benko005          9304   0.0  0.1  4331572  10200   ??  S     9:39AM   0:03.42 /usr/libexec/pkd
+benko005          9301   0.0  0.1  4333384   4876   ??  S     9:39AM   0:00.18 /System/Library/
+gier0001          9293   0.0  0.1  4331780  10164   ??  S     9:39AM   0:00.09 /System/Library/
+benko005          9292   0.0  0.2  4369980  13264   ??  S     9:39AM   0:02.16 /System/Library/
+benko005          9291   0.0  0.1  4337528  10664   ??  S     9:39AM   0:00.49 /System/Library/
+benko005          9290   0.0  0.1  4305540   4728   ??  S     9:39AM   0:01.01 /usr/libexec/pbo
+benko005          9288   0.0  0.1  4331780  10900   ??  S     9:39AM   0:00.08 /System/Library/
+benko005          9287   0.0  0.1  4332396   4896   ??  S     9:39AM   0:00.11 /usr/libexec/swc
+benko005          9286   0.0  0.1  4335192   5864   ??  S     9:39AM   0:00.11 /System/Library/
+benko005          9234   0.0  0.1  4332028   8892   ??  Ss    9:39AM   0:00.14 /System/Library/
+benko005          9233   0.0  0.1  4340956  11636   ??  S     9:39AM   0:00.56 /System/Library/
+benko005          9230   0.0  0.2  4332260  14392   ??  S     9:39AM   0:00.12 /usr/libexec/fmf
+benko005          9229   0.0  0.0  4304420   2072   ??  Ss    9:39AM   0:00.01 /System/Library/
+benko005          9227   0.0  0.2  4335028  14108   ??  S     9:39AM   0:00.08 /System/Library/
+benko005          9225   0.0  0.0  4304424   2816   ??  S     9:39AM   0:00.02 /System/Library/
+benko005          9224   0.0  0.1  4332516   6540   ??  S     9:39AM   0:03.14 /System/Library/
+benko005          9221   0.0  0.1  4332980   7156   ??  S     9:39AM   0:00.46 /System/Library/
+benko005          9220   0.0  0.3  4350772  24336   ??  S     9:39AM   0:00.26 /System/Library/
+benko005          9215   0.0  0.3  4369520  28572   ??  S     9:39AM   0:01.76 /usr/libexec/sha
+benko005          9214   0.0  0.1  4332552   9012   ??  Ss    9:39AM   0:00.15 /System/Library/
+benko005          9208   0.0  0.1  4296228   7956   ??  S     9:39AM   0:00.02 /System/Library/
+benko005          9207   0.0  0.1  4330964   7576   ??  S     9:39AM   0:00.05 /System/Library/
+root              9206   0.0  0.1  4332112   7996   ??  Ss    9:39AM   0:00.05 /usr/libexec/dmd
+benko005          9205   0.0  0.3  4338120  21888   ??  Ss    9:39AM   0:00.35 /System/Library/
+benko005          9202   0.0  0.2  4379692  19920   ??  S     9:38AM   0:03.82 /System/Library/
+benko005          9200   0.0  0.1  4374232  10392   ??  S     9:38AM   0:00.67 /System/Library/
+benko005          9197   0.0  0.3  4341128  24824   ??  S     9:38AM   0:00.57 /System/Library/
+benko005          9196   0.0  0.2  4304448  13076   ??  S     9:38AM   0:00.55 /System/Library/
+benko005          9195   0.0  0.0  4331104   3928   ??  S     9:38AM   0:00.21 /System/Library/
+benko005          9194   0.0  0.1  4378052  11400   ??  S     9:38AM   0:01.17 /System/Library/
+benko005          9192   0.0  0.1  4334104  11664   ??  S     9:38AM   0:01.99 /usr/libexec/nsu
+benko005          9190   0.0  0.1  4331412  11276   ??  S     9:38AM   0:00.19 /System/Library/
+benko005          9189   0.0  0.5  4417780  41808   ??  S     9:38AM   0:02.29 /System/Library/
+benko005          9187   0.0  0.1  4330740   9696   ??  S     9:38AM   0:00.04 /System/Library/
+benko005          9184   0.0  0.1  4304596   5612   ??  S     9:38AM   0:00.02 /System/Library/
+benko005          9183   0.0  0.2  4330600  20228   ??  S     9:38AM   0:00.05 /System/Library/
+benko005          9182   0.0  0.3  4437100  21864   ??  S     9:38AM   0:02.22 /System/Library/
+benko005          9181   0.0  0.1  4337672  11056   ??  S     9:38AM   0:00.40 /System/Library/
+benko005          9180   0.0  0.1  4332656   6684   ??  S     9:38AM   0:00.06 /usr/libexec/net
+benko005          9179   0.0  0.3  4346604  27728   ??  S     9:38AM   0:00.64 /System/Library/
+benko005          9178   0.0  0.1  4305852   8340   ??  S     9:38AM   0:00.06 /usr/libexec/rap
+benko005          9177   0.0  0.1  4333216   9044   ??  S     9:38AM   0:00.49 /usr/sbin/userno
+benko005          9176   0.0  0.3  4341404  26976   ??  S     9:38AM   0:00.65 /usr/libexec/rou
+benko005          9173   0.0  0.1  4305012  12468   ??  S     9:38AM   0:00.11 /System/Library/
+benko005          9172   0.0  0.2  4331140  12756   ??  S     9:38AM   0:00.13 /System/Library/
+gier0001          9169   0.0  0.4  4472956  34088   ??  S     9:38AM   0:01.08 /System/Library/
+benko005          9168   0.0  0.2  4363404  18468   ??  S     9:38AM   0:00.78 /System/Library/
+benko005          9167   0.0  0.2  4338732  16808   ??  S     9:38AM   0:04.27 /usr/libexec/sec
+benko005          9166   0.0  0.2  4332500  17720   ??  S     9:38AM   0:00.27 /System/Library/
+gier0001          9165   0.0  0.3  4341664  27200   ??  S     9:38AM   0:01.60 /usr/libexec/sha
+gier0001          9164   0.0  0.1  4331104   8004   ??  S     9:38AM   0:00.05 /usr/libexec/dmd
+benko005          9162   0.0  0.0  4334088   3744   ??  S     9:38AM   0:00.32 /usr/libexec/lan
+benko005          9157   0.0  0.2  4341836  20888   ??  S     9:38AM   0:00.64 /System/Library/
+benko005          9155   0.0  0.2  4377408  14212   ??  S     9:38AM   0:01.68 /usr/libexec/nsu
+benko005          9154   0.0  0.1  4333128   6628   ??  S     9:38AM   0:00.36 /System/Library/
+benko005          9152   0.0  0.1  4335120   9596   ??  S     9:38AM   0:00.39 /System/Library/
+benko005          9151   0.0  0.0  4304704   3056   ??  S     9:38AM   0:00.04 /System/Library/
+benko005          9150   0.0  0.3  4339100  23124   ??  S     9:38AM   0:00.40 /System/Library/
+benko005          9147   0.0  0.3  4369120  22988   ??  S     9:38AM   0:02.23 /System/Library/
+benko005          9133   0.0  0.1  4335736  10000   ??  S     9:38AM   0:00.19 /usr/libexec/sec
+benko005          9112   0.0  0.2  4361520  13988   ??  S     9:38AM   0:07.20 /usr/libexec/tru
+benko005          9105   0.0  0.3  4343588  22304   ??  S     9:38AM   0:04.00 /System/Library/
+benko005          9102   0.0  0.2  4344204  15944   ??  S     9:38AM   0:11.14 /usr/libexec/lsd
+benko005          9098   0.0  0.1  4306112   4516   ??  S     9:38AM   0:06.26 /usr/sbin/distno
+benko005          9093   0.0  0.3  4333568  26632   ??  S     9:38AM   0:02.44 /usr/libexec/Use
+benko005          9079   0.0  0.0  4305024   3232   ??  S     9:38AM   0:03.94 /usr/sbin/cfpref
+root              8552   0.0  0.2  4418892  19320   ??  Ss    7:37AM   0:40.34 /usr/libexec/ope
+root              8225   0.0  0.1  4341712   9828   ??  Ss   12:02AM   0:00.31 /Library/Applica
+root              6931   0.0  0.0  4296788   1696   ??  Ss   Sat03AM   0:00.01 /usr/sbin/aslman
+root              6411   0.0  0.1  4374964   6852   ??  Ss   Sat12AM   0:01.01 /usr/libexec/rtc
+root              6409   0.0  0.0  4304388   1712   ??  Ss   Sat12AM   0:00.01 /usr/libexec/app
+_assetcache       6391   0.0  0.0  4362664   3976   ??  Ss   Fri11PM   0:00.85 /System/Library/
+root              6273   0.0  0.1  4376528  11716   ??  Ss   Fri11PM   0:00.75 /System/Library/
+root              6243   0.0  0.1  4306200   9708   ??  Ss   Fri11PM   0:00.07 /System/Library/
+root              5414   0.0  0.0  4288500    432   ??  SNs  Thu11PM   0:00.01 /usr/libexec/per
+root              4607   0.0  0.1  4332500   7572   ??  Ss   Thu12PM   0:02.58 /System/Library/
+benko005          4586   0.0  0.6  4427864  48680   ??  Ss   Thu12PM   0:09.40 /System/Library/
+gille029          4441   0.0  0.1  4333180   5540   ??  S    Thu12PM   0:00.05 /System/Library/
+gille029          4431   0.0  0.1  4306216   5012   ??  S    Thu12PM   0:00.05 /System/Library/
+gille029          4394   0.0  0.2  4330764  14640   ??  S    Thu12PM   0:00.08 /System/Library/
+gille029          4390   0.0  0.1  4304904   6804   ??  S    Thu12PM   0:00.06 /System/Library/
+gier0001          4389   0.0  0.3  4412472  22876   ??  S    Thu12PM   0:00.79 /System/Library/
+gier0001          4382   0.0  0.2  4331456  13288   ??  S    Thu12PM   0:00.11 /usr/libexec/sir
+gier0001          4353   0.0  0.2  4381060  19832   ??  Ss   Thu12PM   0:00.84 /System/Library/
+root              4351   0.0  0.1  4361792   7936   ??  Ss   Thu12PM   0:03.02 /System/Library/
+gille029          4350   0.0  0.1  4334900   7088   ??  S    Thu12PM   0:01.62 /usr/libexec/pkd
+gille029          4242   0.0  0.0  4331104   1020   ??  S    Thu12PM   0:00.18 /System/Library/
+gille029          4203   0.0  0.1  4334220   6580   ??  S    Thu12PM   0:03.17 /usr/libexec/sec
+gille029          4201   0.0  0.1  4331140  10184   ??  S    Thu12PM   0:00.32 /System/Library/
+gille029          4200   0.0  0.0  4335112   1992   ??  S    Thu12PM   0:00.38 /usr/libexec/lan
+gille029          4187   0.0  0.0  4304704   1376   ??  S    Thu12PM   0:00.08 /System/Library/
+gille029          4141   0.0  0.1  4343868   4608   ??  S    Thu12PM   0:10.59 /usr/libexec/lsd
+gille029          4135   0.0  0.0  4305588   1576   ??  S    Thu12PM   0:01.24 /usr/sbin/distno
+gille029          4120   0.0  0.0  4304972   1896   ??  S    Thu12PM   0:01.34 /usr/sbin/cfpref
+gier0001          3806   0.0  0.0  4305008   1296   ??  S    Thu08AM   0:00.02 /System/Library/
+root              3363   0.0  0.0  4288500    280   ??  SNs  Wed11PM   0:00.01 /usr/libexec/per
+ladmin            3012   0.0  0.1  4335116   4864   ??  S    Wed05PM   0:00.64 /usr/libexec/tru
+ladmin            3008   0.0  0.0  4334928   2328   ??  S    Wed05PM   0:00.10 /usr/libexec/lsd
+ladmin            2996   0.0  0.0  4305588    696   ??  S    Wed05PM   0:00.32 /usr/sbin/distno
+ladmin            2994   0.0  0.0  4304900   1008   ??  S    Wed05PM   0:00.23 /usr/sbin/cfpref
+gier0001          2732   0.0  0.0  4304992   1800   ??  S    Wed05PM   0:00.07 /System/Library/
+gier0001          2729   0.0  0.0  4304932   1596   ??  S    Wed05PM   0:00.08 /usr/libexec/war
+bentl005          2654   0.0  0.0  4304968    524   ??  S    Wed05PM   0:00.01 /System/Library/
+bentl005          2391   0.0  0.0  4306216   4056   ??  S    Wed05PM   0:00.05 /System/Library/
+bentl005          2309   0.0  0.2  4420592  16140   ??  S    Wed05PM   0:00.15 /System/Library/
+bentl005          2288   0.0  0.1  4331828   9808   ??  S    Wed05PM   0:00.40 /System/Library/
+bentl005          2286   0.0  0.1  4334784   6256   ??  S    Wed05PM   0:01.19 /usr/libexec/pkd
+bentl005          2242   0.0  0.1  4333748   5960   ??  S    Wed05PM   0:00.63 /usr/libexec/sec
+bentl005          2229   0.0  0.0  4304568   1600   ??  S    Wed05PM   0:00.08 /System/Library/
+bentl005          2168   0.0  0.0  4335224   3512   ??  S    Wed05PM   0:00.60 /usr/libexec/lsd
+bentl005          2166   0.0  0.0  4305588   1152   ??  S    Wed05PM   0:01.23 /usr/sbin/distno
+bentl005          2145   0.0  0.0  4304992   1624   ??  S    Wed05PM   0:01.59 /usr/sbin/cfpref
+root              1970   0.0  0.0  4296692    128   ??  SNs  Wed05PM   0:00.01 /usr/libexec/per
+gier0001          1967   0.0  0.1  4334872   6100   ??  Ss   Wed05PM   0:00.11 /System/Library/
+root              1966   0.0  0.1  4304456   5932   ??  Ss   Wed05PM   0:00.06 /System/Library/
+gier0001          1846   0.0  0.0  4306136   3788   ??  S    Wed12PM   0:00.02 /usr/libexec/USB
+gier0001          1840   0.0  0.1  4304608   4848   ??  S    Wed12PM   0:00.09 /System/Library/
+root              1839   0.0  0.0  4339424   1704   ??  Ss   Wed12PM   0:00.06 /System/Library/
+gier0001          1767   0.0  0.3 106164716  22236   ??  Ss   Wed11AM   0:00.70 /System/Library/
+gier0001          1693   0.0  0.0  4332524   2420   ??  S    Wed11AM   0:00.20 /System/Library/
+gier0001          1689   0.0  0.2  4345780  16944   ??  Ss   Wed11AM   0:00.46 /System/Library/
+gier0001          1686   0.0  0.0  4321108   1572   ??  Ss   Wed11AM   0:00.04 /System/Library/
+gier0001          1683   0.0  0.1  4374204   9252   ??  Ss   Wed11AM   0:00.60 /System/Library/
+gier0001          1679   0.0  0.0  4343904   1744   ??  Ss   Wed11AM   0:00.09 /System/Library/
+gier0001          1594   0.0  0.2  4418240  17896   ??  Ss   Wed11AM   0:01.23 /System/Library/
+gier0001          1591   0.0  0.1  4361108   7548   ??  S    Wed11AM   0:00.75 /System/Library/
+root              1573   0.0  0.1  4334036   8272   ??  Ss   Wed11AM   0:00.08 /System/Library/
+gier0001          1292   0.0  0.0  4305068   4024   ??  S    Wed11AM   0:00.11 /System/Library/
+gier0001          1287   0.0  0.0  4332680   2004   ??  S    Wed11AM   0:00.42 /System/Library/
+gier0001          1284   0.0  0.4  4638776  35960   ??  S    Wed11AM   0:19.97 /Applications/Pr
+gier0001          1283   0.0  0.0  4305084   2052   ??  S    Wed11AM   0:00.06 /System/Library/
+gier0001          1276   0.0  0.1  4334084   8672   ??  S    Wed11AM   0:00.10 /System/Library/
+gier0001          1275   0.0  0.0  4305000    636   ??  S    Wed11AM   0:00.70 /System/Library/
+gier0001          1274   0.0  0.1  4354012  12304   ??  S    Wed11AM   0:00.67 /System/Library/
+gier0001          1268   0.0  0.0  4382540   3160   ??  S    Wed11AM   0:00.19 /System/Library/
+root              1265   0.0  0.0  4337216   2208   ??  Ss   Wed11AM   0:00.64 /usr/libexec/dpr
+gier0001          1264   0.0  2.2 90613616 184796   ??  Ss   Wed11AM   1:06.10 /System/Library/
+gier0001          1260   0.0  0.1  4375652   9732   ??  S    Wed11AM   0:01.25 /usr/libexec/key
+gier0001          1259   0.0  0.2  4392788  16968   ??  S    Wed11AM   0:00.54 /System/Library/
+gier0001          1255   0.0  0.0  4304924    624   ??  S    Wed11AM   0:00.05 /System/Library/
+gier0001          1252   0.0  0.1  4414772   4276   ??  S    Wed11AM   0:21.95 /System/Library/
+gier0001          1251   0.0  0.2  4459832  16368   ??  Ss   Wed11AM   0:00.99 /System/Library/
+gier0001          1246   0.0  0.1  4350388   6948   ??  Ss   Wed11AM   0:00.10 /System/Library/
+gier0001          1235   0.0  0.1  4340804  12364   ??  S    Wed11AM   0:00.61 /System/Library/
+gier0001          1225   0.0  0.3  4985236  22748   ??  S    Wed11AM   0:03.51 /Applications/Ut
+gier0001          1223   0.0  0.2  4426684  15088   ??  S    Wed11AM   0:03.99 /Applications/Ut
+gier0001          1221   0.0  0.5  4846336  43500   ??  S    Wed11AM   3:00.28 /Applications/Ut
+gier0001          1220   0.0  0.0  4305024   1240   ??  S    Wed11AM   0:00.09 /System/Library/
+gier0001          1210   0.0  0.3  5011456  25072   ??  S    Wed11AM   0:02.98 /Library/Applica
+gier0001          1209   0.0  0.0  4332396   2540   ??  S    Wed11AM   0:00.16 /usr/libexec/swc
+gier0001          1208   0.0  0.1  4331716   6868   ??  S    Wed11AM   0:26.10 /Library/Applica
+_spotlight        1206   0.0  0.1  4335260   4228   ??  S    Wed11AM   0:00.89 /usr/libexec/tru
+gier0001          1205   0.0  0.1  4382676  11856   ??  S    Wed11AM   0:02.10 /System/Library/
+gier0001          1196   0.0  0.1  4332392   8224   ??  S    Wed11AM   0:00.09 /System/Library/
+gier0001          1194   0.0  0.1  4305640   6364   ??  S    Wed11AM   0:00.13 /System/Library/
+gier0001          1193   0.0  0.1  4332984   5948   ??  Ss   Wed11AM   0:00.42 /Library/Framewo
+gier0001          1192   0.0  0.4  4774536  33876   ??  S    Wed11AM   0:01.01 /Applications/Ut
+gier0001          1191   0.0  0.1  4331716   6864   ??  S    Wed11AM   0:26.25 /Applications/Ut
+gier0001          1189   0.0  0.5  5707880  42164   ??  S    Wed11AM   0:20.17 /Library/Applica
+gier0001          1188   0.0  0.0  4333800   1100   ??  Ss   Wed11AM   0:00.07 /System/Library/
+gier0001          1187   0.0  0.3  4696968  22688   ??  S    Wed11AM   2:22.32 /Applications/Ut
+_gamecontrollerd  1186   0.0  0.1  4305060   5376   ??  Ss   Wed11AM   0:01.42 /usr/libexec/gam
+gier0001          1184   0.0  0.1  4344628   7584   ??  S    Wed11AM   0:08.48 /Library/Applica
+gier0001          1182   0.0  0.1  4307416   9052   ??  S    Wed11AM   0:00.35 /System/Library/
+_datadetectors    1179   0.0  0.0  4339728   1944   ??  Ss   Wed11AM   0:00.61 /usr/libexec/Dat
+gier0001          1177   0.0  0.1  4304916   9384   ??  Ss   Wed11AM   0:00.11 /System/Library/
+gier0001          1172   0.0  0.0  4331320    956   ??  S    Wed11AM   0:00.07 /usr/libexec/vid
+gier0001          1171   0.0  0.2  4330764  14692   ??  S    Wed11AM   0:00.12 /System/Library/
+gier0001          1169   0.0  0.0  4306216   4048   ??  S    Wed11AM   0:00.05 /System/Library/
+gier0001          1168   0.0  0.0  4305748   4036   ??  S    Wed11AM   0:00.06 /System/Library/
+gier0001          1167   0.0  0.0  4331268   2176   ??  S    Wed11AM   0:00.46 /System/Library/
+gier0001          1165   0.0  0.4  4368200  31632   ??  S    Wed11AM   1:57.00 /Library/Applica
+gier0001          1164   0.0  0.4  4709356  37268   ??  S    Wed11AM   0:39.63 /Applications/Ut
+gier0001          1163   0.0  0.1  4332024  11500   ??  S    Wed11AM   0:00.76 /System/Library/
+gier0001          1162   0.0  0.1  4336560  10612   ??  S    Wed11AM   0:01.27 /usr/libexec/kno
+gier0001          1161   0.0  0.1  4348388   7284   ??  S    Wed11AM   0:00.70 /System/Library/
+gier0001          1160   0.0  0.1  4356244   7752   ??  S    Wed11AM   0:00.60 /Library/Applica
+gier0001          1158   0.0  0.1  4332012   7104   ??  S    Wed11AM   0:00.22 /System/Library/
+gier0001          1157   0.0  0.1  4333756   6740   ??  S    Wed11AM   0:00.82 /System/Library/
+gier0001          1155   0.0  0.1  4331820   4984   ??  SN   Wed11AM   0:00.25 /usr/local/jamf/
+gier0001          1153   0.0  0.1  4330712   5552   ??  S    Wed11AM   0:00.07 /System/Library/
+gier0001          1150   0.0  0.1  4372600   9424   ??  S    Wed11AM   0:01.04 /usr/sbin/ckkeyr
+gier0001          1148   0.0  0.2  4338212  20284   ??  S    Wed11AM   0:00.37 /System/Library/
+gier0001          1147   0.0  0.1  4304500  12352   ??  S    Wed11AM   0:00.10 /System/Library/
+gier0001          1146   0.0  0.1  4335080   6344   ??  S    Wed11AM   0:00.34 /System/Library/
+gier0001          1145   0.0  0.1  4331244   9956   ??  S    Wed11AM   0:00.07 /System/Library/
+gier0001          1144   0.0  0.1  4305552   5152   ??  S    Wed11AM   0:00.07 /System/Library/
+gier0001          1143   0.0  0.1  4331456  11620   ??  S    Wed11AM   0:00.19 /System/Library/
+gier0001          1141   0.0  0.2  4304476  16464   ??  S    Wed11AM   0:00.08 /System/Library/
+gier0001          1140   0.0  0.2  5547468  20736   ??  Ss   Wed11AM   0:18.15 /System/Library/
+gier0001          1138   0.0  0.2  4379908  17180   ??  S    Wed11AM   0:01.97 /System/Library/
+gier0001          1137   0.0  0.1  4331648   4852   ??  S    Wed11AM   0:01.25 /System/Library/
+gier0001          1114   0.0  0.1  4340828   8676   ??  S    Wed11AM   0:01.28 /System/Library/
+gier0001          1111   0.0  0.2  4353568  15776   ??  Ss   Wed11AM   0:00.91 /System/Library/
+gier0001          1110   0.0  0.1  4330884   7176   ??  Ss   Wed11AM   0:00.62 /System/Library/
+gier0001          1107   0.0  0.1  4346828   6024   ??  S    Wed11AM   0:00.18 /System/Library/
+root              1106   0.0  0.0  4309444   3528   ??  Ss   Wed11AM   0:00.13 /usr/sbin/fileco
+gier0001          1105   0.0  0.1  4366680   6760   ??  Ss   Wed11AM   0:00.99 /Applications/Ut
+gier0001          1101   0.0  0.0  4331712   1952   ??  S    Wed11AM   0:00.10 /System/Library/
+gier0001          1094   0.0  0.1  4332064   9104   ??  Ss   Wed11AM   0:00.52 /System/Library/
+_fpsd             1090   0.0  0.1  4308704   5300   ??  Ss   Wed11AM   0:00.18 /System/Library/
+gier0001          1077   0.0  0.1  4331544   9856   ??  S    Wed11AM   0:00.36 /System/Library/
+gier0001          1076   0.0  0.1  4332264  12260   ??  S    Wed11AM   0:00.16 /usr/libexec/fmf
+gier0001          1075   0.0  0.1  4333180   4356   ??  S    Wed11AM   0:00.06 /System/Library/
+gier0001          1074   0.0  0.0  4305088   4016   ??  S    Wed11AM   0:00.02 SafeEjectGPUAgen
+gier0001          1070   0.0  0.1  4330964   4420   ??  S    Wed11AM   0:00.07 /System/Library/
+gier0001          1066   0.0  0.2  4421840  16316   ??  S    Wed11AM   0:00.21 /System/Library/
+gier0001          1041   0.0  0.2  4437100  18404   ??  S    Wed11AM   0:04.53 /System/Library/
+gier0001          1038   0.0  0.0  4304420    620   ??  Ss   Wed11AM   0:00.01 /System/Library/
+gier0001          1036   0.0  0.0  4304424   1968   ??  S    Wed11AM   0:00.06 /System/Library/
+gier0001          1035   0.0  0.1  4332980   5172   ??  S    Wed11AM   0:00.95 /System/Library/
+gier0001          1034   0.0  0.2  4350808  19968   ??  S    Wed11AM   0:00.31 /System/Library/
+gier0001          1032   0.0  0.1  4332588   9244   ??  Ss   Wed11AM   0:00.54 /System/Library/
+root              1031   0.0  0.1  4332288   4216   ??  Ss   Wed11AM   0:02.07 /usr/sbin/wirele
+gier0001          1027   0.0  0.1  4331864  10052   ??  S    Wed11AM   0:00.50 /System/Library/
+gier0001          1023   0.0  0.1  4332564  10896   ??  S    Wed11AM   0:00.64 /System/Library/
+_assetcache       1022   0.0  0.1  4336156   4928   ??  Ss   Wed11AM   0:00.13 /usr/libexec/Ass
+root              1017   0.0  0.0  4332656   2168   ??  Ss   Wed11AM   0:00.08 /usr/bin/sysdiag
+_applepay         1015   0.0  0.0  4331644   2312   ??  Ss   Wed11AM   0:00.11 /usr/libexec/nfc
+gier0001          1012   0.0  0.2  4377200  12748   ??  S    Wed11AM   0:01.83 /System/Library/
+gier0001          1010   0.0  0.1  4304448  10828   ??  S    Wed11AM   0:01.00 /System/Library/
+gier0001          1008   0.0  0.2  4338120  19404   ??  Ss   Wed11AM   0:00.77 /System/Library/
+gier0001          1007   0.0  0.1  4306216   8616   ??  S    Wed11AM   0:00.13 /System/Library/
+gier0001          1006   0.0  0.1  4336176   9916   ??  S    Wed11AM   0:06.49 /usr/libexec/pkd
+root              1005   0.0  0.1  4377700   7960   ??  Ss   Wed11AM   0:02.49 /System/Library/
+gier0001           999   0.0  0.0  4305596    752   ??  S    Wed11AM   0:00.05 /usr/libexec/spi
+gier0001           994   0.0  0.1  4304420   6320   ??  S    Wed11AM   0:00.05 /System/Library/
+gier0001           990   0.0  0.5  4444728  44820   ??  S    Wed11AM   0:03.07 /System/Library/
+gier0001           989   0.0  0.4  4393064  29364   ??  S    Wed11AM   0:05.79 /System/Library/
+gier0001           988   0.0  0.2  4417276  13228   ??  S    Wed11AM   0:03.92 /System/Library/
+gier0001           986   0.0  0.1  4365348   4452   ??  S    Wed11AM   0:02.70 /System/Library/
+root               985   0.0  0.0  4304388   1152   ??  Ss   Wed11AM   0:00.06 /System/Library/
+gier0001           984   0.0  0.0  4331908   4064   ??  S    Wed11AM   0:00.42 /usr/libexec/sil
+gier0001           981   0.0  0.0  4304596   4124   ??  S    Wed11AM   0:00.03 /System/Library/
+gier0001           979   0.0  0.0  4333560   3680   ??  S    Wed11AM   0:00.40 /System/Library/
+gier0001           978   0.0  0.1  4337760   9104   ??  S    Wed11AM   0:00.48 /System/Library/
+gier0001           977   0.0  0.1  4370552   8816   ??  S    Wed11AM   0:00.58 /System/Library/
+gier0001           976   0.0  0.2  4369416  18324   ??  S    Wed11AM   0:01.27 /System/Library/
+gier0001           975   0.0  0.3  4628512  23400   ??  S    Wed11AM   0:00.60 /System/Library/
+gier0001           974   0.0  0.1  4330808   5336   ??  S    Wed11AM   0:00.09 /System/Library/
+gier0001           973   0.0  0.2  4382392  14096   ??  S    Wed11AM   0:02.26 /System/Library/
+gier0001           972   0.0  0.1  4371540   7912   ??  S    Wed11AM   0:01.02 /System/Library/
+gier0001           970   0.0  0.2  4330600  18316   ??  S    Wed11AM   0:00.13 /System/Library/
+gier0001           965   0.0  0.1  4348724   6580   ??  S    Wed11AM   0:00.86 /System/Library/
+gier0001           964   0.0  0.4  4403988  36156   ??  S    Wed11AM   0:03.67 /System/Library/
+gier0001           963   0.0  0.1  4304488  10080   ??  S    Wed11AM   0:00.23 /System/Library/
+gier0001           961   0.0  0.0  4305540   1292   ??  S    Wed11AM   0:00.17 /usr/libexec/pbo
+gier0001           959   0.0  0.1  4332656   4660   ??  S    Wed11AM   0:00.17 /usr/libexec/net
+gier0001           958   0.0  0.2  4338752  20876   ??  S    Wed11AM   0:01.12 /System/Library/
+gier0001           957   0.0  0.1  4337536   7056   ??  S    Wed11AM   0:00.70 /System/Library/
+gier0001           956   0.0  0.1  4334256   7060   ??  S    Wed11AM   0:00.88 /usr/sbin/userno
+gier0001           955   0.0  0.3  4341988  22988   ??  S    Wed11AM   0:02.79 /usr/libexec/rou
+gier0001           946   0.0  0.2  4332500  16324   ??  S    Wed11AM   0:00.79 /System/Library/
+gier0001           944   0.0  0.1  4305852   6784   ??  S    Wed11AM   0:00.15 /usr/libexec/rap
+gier0001           942   0.0  0.9  5397812  78544   ??  S    Wed11AM   0:10.59 /Applications/Mi
+gier0001           940   0.0  0.1  4375248  11988   ??  S    Wed11AM   0:02.32 /usr/libexec/nsu
+gier0001           939   0.0  1.3  5648500 112560   ??  S    Wed11AM   2:47.13 /Applications/Mi
+gier0001           936   0.0  0.7  5973180  59576   ??  S    Wed11AM   1:06.22 /Applications/Sa
+gier0001           935   0.0  0.2  4341904  19052   ??  S    Wed11AM   0:01.23 /System/Library/
+gier0001           934   0.0  0.3  4418920  24200   ??  S    Wed11AM   0:00.93 /System/Library/
+gier0001           933   0.0  0.2  4338468  20628   ??  S    Wed11AM   0:00.46 /System/Library/
+gier0001           932   0.0  0.1  4334164   4624   ??  S    Wed11AM   0:00.80 /System/Library/
+root               931   0.0  0.2  4331732  13528   ??  Ss   Wed11AM   0:00.78 /usr/sbin/Wirele
+gier0001           928   0.0  0.0  4304836   1796   ??  S    Wed11AM   0:00.08 /System/Library/
+gier0001           926   0.0  0.1  4333908   6508   ??  S    Wed11AM   0:06.96 /usr/libexec/nsu
+gier0001           924   0.0  0.3  4382608  21500   ??  S    Wed11AM   0:02.95 /System/Library/
+gier0001           921   0.0  0.1  4334644   8004   ??  S    Wed11AM   0:00.86 /usr/libexec/sec
+gier0001           920   0.0  0.1  4333644   5044   ??  S    Wed11AM   0:00.49 /System/Library/
+gier0001           885   0.0  0.1  4335672   8000   ??  S    Wed11AM   0:00.48 /usr/libexec/sec
+gier0001           878   0.0  0.1  4359984   9312   ??  S    Wed11AM   0:08.59 /usr/libexec/tru
+gier0001           872   0.0  0.1  4335504   5740   ??  S    Wed11AM   0:00.66 /usr/libexec/lsd
+gier0001           871   0.0  0.2  4343624  20148   ??  S    Wed11AM   0:06.74 /System/Library/
+gier0001           869   0.0  0.0  4305588   4052   ??  S    Wed11AM   0:15.10 /usr/sbin/distno
+gier0001           867   0.0  0.3  4333784  25192   ??  S    Wed11AM   0:05.90 /usr/libexec/Use
+gier0001           847   0.0  0.0  4305040   2660   ??  S    Wed11AM   0:06.23 /usr/sbin/cfpref
+root               842   0.0  0.0  4306136   1392   ??  Ss   Wed11AM   0:00.14 /usr/libexec/sec
+root               803   0.0  0.0  4297000   1004   ??  Ss   Wed11AM   0:00.02 /System/Library/
+_spotlight         576   0.0  0.1  4306200   5140   ??  S    Wed08AM   0:00.06 /System/Library/
+_spotlight         573   0.0  0.0  4305588   1032   ??  S    Wed08AM   0:00.82 /usr/sbin/distno
+_softwareupdate    568   0.0  0.1  4332312   6460   ??  Ss   Wed08AM   0:00.13 /System/Library/
+root               567   0.0  0.2  4356324  19300   ??  Ss   Wed08AM   0:02.10 /System/Library/
+root               558   0.0  0.0  4339320   3140   ??  Ss   Wed08AM   0:01.10 /usr/libexec/dis
+root               556   0.0  0.2  4507672  20908   ??  Ss   Wed08AM   0:02.35 /usr/sbin/spindu
+root               555   0.0  0.1  4354896   5916   ??  Ss   Wed08AM   0:04.30 /System/Library/
+root               512   0.0  0.0  4305072   2364   ??  Ss   Wed08AM   0:00.01 /System/Library/
+_captiveagent      471   0.0  0.0  4332820   2408   ??  Ss   Wed08AM   0:00.48 /usr/libexec/cap
+root               423   0.0  0.0  4304936   1152   ??  Ss   Wed08AM   0:00.04 /System/Library/
+root               421   0.0  0.1  4305312   5832   ??  Ss   Wed08AM   0:00.07 /System/Library/
+root               418   0.0  0.0  4334444   2168   ??  Ss   Wed08AM   0:00.09 /System/Library/
+root               417   0.0  0.0  4336148   3124   ??  Ss   Wed08AM   0:00.36 /usr/sbin/system
+root               401   0.0  0.1  4310452   4720   ??  Ss   Wed08AM   0:00.70 /System/Library/
+root               398   0.0  0.0  4288248    124   ??  Ss   Wed08AM   0:00.00 /System/Library/
+root               395   0.0  0.1  4305716   5000   ??  Ss   Wed08AM   0:00.04 /System/Library/
+_coreaudiod        392   0.0  0.0  4304704   3756   ??  Ss   Wed08AM   0:00.01 /System/Library/
+root               388   0.0  0.0  4306140   1060   ??  Ss   Wed08AM   0:00.07 /System/Library/
+root               384   0.0  0.1  4332368   4900   ??  S    Wed08AM   0:00.17 /usr/sbin/system
+root               383   0.0  0.0  4332332   3248   ??  Ss   Wed08AM   0:00.39 /System/Library/
+root               380   0.0  0.1  4305376   4212   ??  Ss   Wed08AM   0:00.02 /usr/libexec/boo
+root               379   0.0  0.0  4304924   1600   ??  Ss   Wed08AM   0:02.96 /usr/libexec/sys
+root               377   0.0  0.0  4308080   2460   ??  Ss   Wed08AM   0:01.11 /System/Library/
+root               369   0.0  0.0  4305352    828   ??  Ss   Wed08AM   0:00.05 /usr/libexec/col
+root               363   0.0  0.0  4304700   1696   ??  Ss   Wed08AM   0:00.07 /usr/libexec/col
+root               361   0.0  0.0  4363660    576   ??  Ss   Wed08AM   0:00.05 /System/Library/
+root               328   0.0  1.3  5015448 110284   ??  Ss   Wed08AM   0:25.18 /System/Library/
+root               321   0.0  0.1  4296280   6184   ??  Ss   Wed08AM   0:00.05 /usr/libexec/the
+root               320   0.0  0.1  4338956   7328   ??  Ss   Wed08AM   0:00.34 /System/Library/
+root               318   0.0  0.2  4331796  13128   ??  Ss   Wed08AM   0:00.18 /usr/libexec/fin
+_softwareupdate    317   0.0  0.3  6330592  25148   ??  Ss   Wed08AM   2:48.64 /System/Library/
+_nsurlstoraged     316   0.0  0.0  4304992   2104   ??  Ss   Wed08AM   0:00.25 /usr/libexec/nsu
+root               293   0.0  0.1  4332764   5820   ??  Ss   Wed08AM   0:00.41 /usr/libexec/sec
+root               292   0.0  0.0  4304956   1648   ??  Ss   Wed08AM   0:00.42 /System/Library/
+_netbios           291   0.0  0.1  4306548   4788   ??  SNs  Wed08AM   0:01.24 /usr/sbin/netbio
+_analyticsd        288   0.0  0.1  4332440   4680   ??  Ss   Wed08AM   0:00.56 /System/Library/
+root               287   0.0  0.1  4333312   5052   ??  Ss   Wed08AM   0:01.35 /System/Library/
+_cmiodalassistants   286   0.0  0.1  4363408   6100   ??  Ss   Wed08AM   0:00.39 /System/Library/
+root               285   0.0  0.0  4296692    500   ??  Ss   Wed08AM   0:00.20 /usr/libexec/fir
+root               284   0.0  0.1  4296288   4372   ??  Ss   Wed08AM   0:00.08 /System/Library/
+root               283   0.0  0.1  4331880   4488   ??  Ss   Wed08AM   0:01.27 /usr/libexec/usb
+root               282   0.0  0.0  4289052    868   ??  Ss   Wed08AM   0:00.36 /usr/libexec/wat
+root               281   0.0  0.0  4335904   1048   ??  Ss   Wed08AM   0:01.58 /usr/sbin/cupsd 
+root               264   0.0  0.2  4339524  14784   ??  Ss   Wed08AM   0:05.98 /usr/libexec/sys
+root               262   0.0  0.0  4304660    760   ??  Ss   Wed08AM   0:00.02 /usr/libexec/smd
+_coreaudiod        250   0.0  0.0  4331092   1888   ??  Ss   Wed08AM   0:00.41 /System/Library/
+_nsurlsessiond     249   0.0  0.2  4384764  17300   ??  Ss   Wed08AM   0:02.23 /usr/libexec/nsu
+root               248   0.0  0.2  4342332  15100   ??  Ss   Wed08AM   0:04.40 /usr/libexec/mob
+_networkd          247   0.0  0.1  4340748   8328   ??  Ss   Wed08AM   0:06.02 /usr/libexec/sym
+root               242   0.0  0.0  4331636   1352   ??  Ss   Wed08AM   0:01.63 /usr/sbin/mDNSRe
+_mdnsresponder     241   0.0  0.1  4334464   4600   ??  Ss   Wed08AM   0:22.08 /usr/sbin/mDNSRe
+root               239   0.0  0.1  4335868   7508   ??  Ss   Wed08AM   0:03.46 /usr/libexec/lsd
+root               238   0.0  0.0  4307204   1192   ??  Ss   Wed08AM   0:00.15 /System/Library/
+root               237   0.0  0.1  4340728   5232   ??  Ss   Wed08AM   0:02.06 /usr/libexec/san
+_ctkd              223   0.0  0.0  4306196   4060   ??  Ss   Wed08AM   0:00.02 /System/Library/
+root               222   0.0  0.1  4342920  11160   ??  Ss   Wed08AM   0:21.17 /usr/libexec/tru
+root               221   0.0  0.0  4304988   3888   ??  Ss   Wed08AM   0:00.01 /System/Library/
+root               214   0.0  0.0  4336472   3900   ??  Ss   Wed08AM   0:01.30 /usr/libexec/neh
+_coreaudiod        213   0.0  0.1  4314380   8648   ??  Ss   Wed08AM   0:02.70 /usr/sbin/coreau
+root               159   0.0  0.1  4344080  11536   ??  Ss   Wed08AM   0:36.92 /usr/libexec/air
+root               149   0.0  0.1  4305524   5324   ??  Ss   Wed08AM   0:12.03 /usr/sbin/cfpref
+root               148   0.0  0.0  4304984   1156   ??  Ss   Wed08AM   0:00.15 aslmanager
+root               147   0.0  0.1  4331112   5208   ??  Ss   Wed08AM   0:03.12 /System/Library/
+root               146   0.0  0.1  4334684   6556   ??  Ss   Wed08AM   0:02.66 /System/Library/
+_distnote          144   0.0  0.0  4306112   2028   ??  Ss   Wed08AM   0:09.38 /usr/sbin/distno
+root               143   0.0  0.0  4305216   2360   ??  Ss   Wed08AM   0:23.70 /usr/sbin/notify
+root               142   0.0  0.1  4339268   5160   ??  Ss   Wed08AM   0:02.51 /usr/libexec/amf
+root               141   0.0  0.1  4332328   7832   ??  Ss   Wed08AM   0:00.97 /usr/libexec/Air
+root               140   0.0  0.1  4332292   9496   ??  Ss   Wed08AM   0:07.31 /usr/libexec/cor
+root               138   0.0  0.1  4335100   5816   ??  Ss   Wed08AM   0:08.22 /usr/sbin/blueto
+root               136   0.0  0.0  4304656    776   ??  Ss   Wed08AM   0:00.02 /usr/sbin/Kernel
+root               135   0.0  0.0  4304496   2452   ??  Ss   Wed08AM   0:00.13 /System/Library/
+gier0001           134   0.0  0.4  4428552  31776   ??  Ss   Wed08AM   0:04.96 /System/Library/
+root               133   0.0  0.0  4333324   2616   ??  Ss   Wed08AM   0:00.24 /System/Library/
+root               131   0.0  0.1  4337456   8100   ??  Ss   Wed08AM   0:04.97 /usr/libexec/das
+root               128   0.0  0.0  4304884    956   ??  Ss   Wed08AM   0:00.19 autofsd
+_displaypolicyd    127   0.0  0.1  4307296   4560   ??  Ss   Wed08AM   0:00.25 /usr/libexec/dis
+_locationd         125   0.0  0.1  4341056  10388   ??  Ss   Wed08AM   0:06.68 /usr/libexec/loc
+root               124   0.0  0.1  4334904   6116   ??  Ss   Wed08AM   0:10.42 /usr/sbin/securi
+_usbmuxd           123   0.0  0.0  4331332   2452   ??  Ss   Wed08AM   0:00.83 /System/Library/
+root               122   0.0  0.1  4337804   6632   ??  Ss   Wed08AM   0:16.24 /System/Library/
+root               121   0.0  0.0  4331924   2180   ??  Ss   Wed08AM   0:00.35 /System/Library/
+_timed             120   0.0  0.0  4330872   3756   ??  Ss   Wed08AM   0:00.87 /usr/libexec/tim
+root               119   0.0 19.4  6105664 1625908   ??  S<s  Wed08AM  47:27.40 /Library/Applica
+root               118   0.0  0.2  4339860  18688   ??  Ss   Wed08AM   0:10.47 /System/Library/
+root               113   0.0  0.2  4305144  20728   ??  Ss   Wed08AM   0:00.44 /System/Library/
+root               112   0.0  0.3  4340060  24216   ??  Ss   Wed08AM   0:05.99 /usr/libexec/cor
+root               110   0.0  0.0  4330708   3660   ??  Ss   Wed08AM   0:10.15 /usr/libexec/dis
+root               109   0.0  0.0  4306172   1064   ??  Ss   Wed08AM   0:00.06 /System/Library/
+_iconservices      108   0.0  0.1  4336856   5252   ??  Ss   Wed08AM   0:00.11 /System/Library/
+root               102   0.0  0.6  4451660  50044   ??  Ss   Wed08AM   0:36.17 /System/Library/
+root               101   0.0  0.1  4335916   7868   ??  SNs  Wed08AM   0:00.93 /usr/libexec/war
+root                98   0.0  0.3  4440284  23144   ??  Ss   Wed08AM   0:14.69 /usr/libexec/log
+root                97   0.0  0.0  4305064    880   ??  Ss   Wed08AM   0:00.03 /usr/libexec/key
+root                95   0.0  0.1  4347788   7976   ??  Ss   Wed08AM   0:00.56 /Library/Applica
+root                94   0.0  0.1  4331372   6392   ??  Ss   Wed08AM   0:05.63 /System/Library/
+root                93   0.0  0.1  4338476   9048   ??  Ss   Wed08AM   0:12.23 /usr/libexec/con
+_appleevents        92   0.0  0.0  4333984   4040   ??  Ss   Wed08AM   0:01.14 /System/Library/
+root                90   0.0  0.1  4338436   8616   ??  Ss   Wed08AM   0:04.27 /usr/sbin/system
+root                89   0.0  0.0  4305892   1540   ??  Ss   Wed08AM   0:00.06 /Library/Applica
+root                87   0.0  0.2  4332288  14884   ??  Ss   Wed08AM   0:00.72 /System/Library/
+root                86   0.0  0.2  4378708  14212   ??  SNs  Wed08AM   0:02.64 /usr/local/jamf/
+root                84   0.0  0.1  4428612   5352   ??  Ss   Wed08AM   0:15.25 /System/Library/
+root                83   0.0  0.2  4342084  12800   ??  Ss   Wed08AM   0:10.12 /usr/libexec/kex
+root                82   0.0  0.1  4304724   4284   ??  Ss   Wed08AM   0:01.07 /System/Library/
+root                79   0.0  0.2  4333260  13028   ??  Ss   Wed08AM   0:07.06 /usr/libexec/Use
+root                78   0.0  0.0  4305532    900   ??  Ss   Wed08AM   0:03.02 /usr/sbin/syslog
+root                 1   0.0  0.2  4331080  16488   ??  Ss   Wed08AM   1:36.32 /sbin/launchd
+root             13336   0.0  0.0  4268356   1168 s000  R+    4:30PM   0:00.00 ps aux
+_screensaver      5418   0.0  0.0        0      0   ??  Z    Thu11PM   0:00.00 (lwsslauncher)
+benko005         13320   0.0  0.0  4296240   1656 s000  S     4:29PM   0:00.03 -bash
+root             13319   0.0  0.1  4304432   5440 s000  Ss    4:29PM   0:00.02 login -pf benko0
+gier0001         13302   0.0  0.2  4849840  14724   ??  S     4:28PM   0:00.05 /System/Library/
+benko005         13224   0.0  0.4  8800624  33524   ??  S     4:23PM   0:00.07 /Volumes/Google 
+benko005         13222   0.0  1.2  8869324 104244   ??  S     4:23PM   0:01.63 /Volumes/Google 
+benko005         13221   0.0  0.2  4341472  16360   ??  Ss    4:23PM   0:00.05 /System/Library/
+maclab-63:~ benko005$ top
+maclab-63:~ benko005$ nano
+maclab-63:~ benko005$ nano &
+[1] 13341
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13320 ttys000    0:00.03 -bash
+13341 ttys000    0:00.00 nano
+
+[1]+  Stopped                 nano
+maclab-63:~ benko005$ jobs
+[1]+  Stopped                 nano
+maclab-63:~ benko005$ fg %1
+nano
+maclab-63:~ benko005$ jobs
+maclab-63:~ benko005$ nano
+maclab-63:~ benko005$ nano &
+[1] 13352
+maclab-63:~ benko005$ nano &
+[2] 13353
+
+[1]+  Stopped                 nano
+maclab-63:~ benko005$ nano &
+[3] 13354
+
+[2]+  Stopped                 nano
+maclab-63:~ benko005$ bg %1
+[1] nano &
+
+[1]+  Stopped                 nano
+
+[3]-  Stopped                 nano
+maclab-63:~ benko005$ kill [-signal] PID
+-bash: kill: [-signal]: arguments must be process or job IDs
+-bash: kill: PID: arguments must be process or job IDs
+maclab-63:~ benko005$ kill [-nano] PID
+-bash: kill: [-nano]: arguments must be process or job IDs
+-bash: kill: PID: arguments must be process or job IDs
+maclab-63:~ benko005$ kill [-13353] PID
+-bash: kill: [-13353]: arguments must be process or job IDs
+-bash: kill: PID: arguments must be process or job IDs
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13320 ttys000    0:00.05 -bash
+13352 ttys000    0:00.00 nano
+13353 ttys000    0:00.00 nano
+13354 ttys000    0:00.00 nano
+maclab-63:~ benko005$ kill [-signal] 13320
+-bash: kill: [-signal]: arguments must be process or job IDs
+maclab-63:~ benko005$ kill [-HUP] 13320
+-bash: kill: [-HUP]: arguments must be process or job IDs
+maclab-63:~ benko005$ kill [-INT] 13320
+-bash: kill: [-INT]: arguments must be process or job IDs
+maclab-63:~ benko005$ kill [-KILL] 13320
+-bash: kill: [-KILL]: arguments must be process or job IDs
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13320 ttys000    0:00.06 -bash
+13352 ttys000    0:00.00 nano
+13353 ttys000    0:00.00 nano
+13354 ttys000    0:00.00 nano
+maclab-63:~ benko005$ kill [-TERM] 13320
+-bash: kill: [-TERM]: arguments must be process or job IDs
+maclab-63:~ benko005$ kill [-CONT] 13320
+-bash: kill: [-CONT]: arguments must be process or job IDs
+maclab-63:~ benko005$ kill [-STOP] 13320
+-bash: kill: [-STOP]: arguments must be process or job IDs
+maclab-63:~ benko005$ kill -l 
+.CFUserTextEncoding             Library/
+.DS_Store                       Movies/
+.Trash/                         Music/
+.bash_history                   Photos/
+.bash_sessions/                 Pictures/
+.swp                            Public/
+.viminfo                        Really hoping this doesnt save
+Applications/                   ls-error.txt
+Desktop/                        ls-output.txt
+Documents/                      ls.output.txt
+Downloads/                      ls.txt
+LAZZZZZydog.txt                 no
+maclab-63:~ benko005$ kill -l 13320
+-bash: kill: 13320: invalid signal specification
+maclab-63:~ benko005$ kill -1 13320
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...-bash: child setpgid (13444 to 13320): Operation not permitted
+-bash: child setpgid (13445 to 13320): Operation not permitted
+-bash: child setpgid (13446 to 13320): Operation not permitted
+none found.
+
+[Process completed]
+
+
+Last login: Mon Feb 24 16:42:19 on ttys000
+maclab-63:~ benko005$ nano &
+[1] 13496
+maclab-63:~ benko005$ kill -1 13496
+[1]+  Hangup: 1               nano
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13466 ttys000    0:00.02 -bash
+13483 ttys000    0:00.00 nano
+13488 ttys001    0:00.01 -bash
+maclab-63:~ benko005$ kill -1 13496
+-bash: kill: (13496) - No such process
+maclab-63:~ benko005$ kill -1 13483
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13466 ttys000    0:00.02 -bash
+13483 ttys000    0:00.00 (nano)
+13488 ttys001    0:00.02 -bash
+maclab-63:~ benko005$ kill -1 13483
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13466 ttys000    0:00.02 -bash
+13483 ttys000    0:00.00 (nano)
+13488 ttys001    0:00.02 -bash
+maclab-63:~ benko005$ HUP -1 13483
+-bash: HUP: command not found
+maclab-63:~ benko005$ hup -1 13483
+-bash: hup: command not found
+maclab-63:~ benko005$ nano &
+[1] 13507
+maclab-63:~ benko005$ hup -1 13507
+-bash: hup: command not found
+
+[1]+  Stopped                 nano
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13466 ttys000    0:00.02 -bash
+13483 ttys000    0:00.00 (nano)
+13488 ttys001    0:00.03 -bash
+13507 ttys001    0:00.00 nano
+maclab-63:~ benko005$ nano &
+[2] 13511
+maclab-63:~ benko005$ int -1 13511
+-bash: int: command not found
+
+[2]+  Stopped                 nano
+maclab-63:~ benko005$ ps
+  PID TTY           TIME CMD
+13466 ttys000    0:00.02 -bash
+13483 ttys000    0:00.00 (nano)
+13488 ttys001    0:00.04 -bash
+13507 ttys001    0:00.00 nano
+13511 ttys001    0:00.00 nano
+maclab-63:~ benko005$ stop -1 13511
+-bash: stop: command not found
+maclab-63:~ benko005$ cont -1 13511
+-bash: cont: command not found
+maclab-63:~ benko005$ nano
+maclab-63:~ benko005$ nano 13488
+maclab-63:~ benko005$ ls
+Applications			Pictures
+Desktop				Public
+Documents			Really hoping this doesnt save
+Downloads			ls-error.txt
+LAZZZZZydog.txt			ls-output.txt
+Library				ls.output.txt
+Movies				ls.txt
+Music				no
+Photos
+maclab-63:~ benko005$ mv Really\ hoping\ this\ doesnt\ save Pictures
+maclab-63:~ benko005$ ls
+Applications	LAZZZZZydog.txt	Photos		ls-output.txt
+Desktop		Library		Pictures	ls.output.txt
+Documents	Movies		Public		ls.txt
+Downloads	Music		ls-error.txt	no
+maclab-63:~ benko005$ cd Pictures
+maclab-63:Pictures benko005$ ls
+Really hoping this doesnt save
+maclab-63:Pictures benko005$ cd ..
+maclab-63:~ benko005$ ls
+Applications	LAZZZZZydog.txt	Photos		ls-output.txt
+Desktop		Library		Pictures	ls.output.txt
+Documents	Movies		Public		ls.txt
+Downloads	Music		ls-error.txt	no
+maclab-63:~ benko005$ cd Pictures
+maclab-63:Pictures benko005$ ls
+Really hoping this doesnt save
+maclab-63:Pictures benko005$ mv Really\ hoping\ this\ doesnt\ save ~
+maclab-63:Pictures benko005$ ls
+maclab-63:Pictures benko005$ cd ..
+maclab-63:~ benko005$ ls
+Applications			Pictures
+Desktop				Public
+Documents			Really hoping this doesnt save
+Downloads			ls-error.txt
+LAZZZZZydog.txt			ls-output.txt
+Library				ls.output.txt
+Movies				ls.txt
+Music				no
+Photos
+maclab-63:~ benko005$ mv Really\ hoping\ this\ doesnt\ save Documents
+maclab-63:~ benko005$ ls
+Applications	LAZZZZZydog.txt	Photos		ls-output.txt
+Desktop		Library		Pictures	ls.output.txt
+Documents	Movies		Public		ls.txt
+Downloads	Music		ls-error.txt	no
+maclab-63:~ benko005$ nano
+maclab-63:~ benko005$ ls
+Applications	LAZZZZZydog.txt	Photos		ls-error.txt	no
+Desktop		Library		Pictures	ls-output.txt
+Documents	Movies		Public		ls.output.txt
+Downloads	Music		bashrc		ls.txt
+maclab-63:~ benko005$ mv bashrc Documents
+maclab-63:~ benko005$ ls
+Applications	LAZZZZZydog.txt	Photos		ls-output.txt
+Desktop		Library		Pictures	ls.output.txt
+Documents	Movies		Public		ls.txt
+Downloads	Music		ls-error.txt	no
+maclab-63:~ benko005$ 
